@@ -1,0 +1,2448 @@
+<div class="topic reference nested1" lang="en-us" id="apex_System_Math_methods">
+    <a name="apex_System_Math_methods" data-id=""><!-- --></a>
+    <h2 class="helpHead2"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a>Math Methods</span></h2>
+    
+    
+    <div class="body refbody">
+    <div class="section">
+    <p class="p">The following are methods for <samp class="codeph apex_code">Math</samp>. All methods are static.</p>
+    </div>
+    
+    </div>
+    
+    <div id="sfdc:seealso" class="related-links">
+    <ul class="ullinks">
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_abs" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_abs">abs(decimalValue)</a></strong><br>
+    Returns the absolute value of the specified Decimal.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_abs_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_abs_2">abs(doubleValue)</a></strong><br>
+    Returns the absolute value of the specified Double.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_abs_3" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_abs_3">abs(integerValue)</a></strong><br>
+    Returns the absolute value of the specified Integer.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_abs_4" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_abs_4">abs(longValue)</a></strong><br>
+    Returns the absolute value of the specified Long.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_acos" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_acos">acos(decimalAngle)</a></strong><br>
+    Returns the arc cosine of an angle, in the range of 0.0 through <em class="ph i">pi</em>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_acos_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_acos_2">acos(doubleAngle)</a></strong><br>
+    Returns the arc cosine of an angle, in the range of 0.0 through <em class="ph i">pi</em>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_asin" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_asin">asin(decimalAngle)</a></strong><br>
+    Returns the arc sine of an angle, in the range of -<em class="ph i">pi</em>/2 through <em class="ph i">pi</em>/2.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_asin_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_asin_2">asin(doubleAngle)</a></strong><br>
+    Returns the arc sine of an angle, in the range of -<em class="ph i">pi</em>/2 through <em class="ph i">pi</em>/2.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_atan" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_atan">atan(decimalAngle)</a></strong><br>
+    Returns the arc tangent of an angle, in the range of -<em class="ph i">pi</em>/2 through <em class="ph i">pi</em>/2.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_atan_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_atan_2">atan(doubleAngle)</a></strong><br>
+    Returns the arc tangent of an angle, in the range of -<em class="ph i">pi</em>/2 through <em class="ph i">pi</em>/2.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_atan2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_atan2">atan2(xCoordinate, yCoordinate)</a></strong><br>
+    Converts rectangular coordinates (<var class="keyword varname">xCoordinate</var> and    <var class="keyword varname">yCoordinate</var>) to polar (<var class="keyword varname">r</var> and <var class="keyword varname">theta</var>).   This method computes the phase <var class="keyword varname">theta</var> by computing an arc tangent of    <var class="keyword varname">xCoordinate</var>/<var class="keyword varname">yCoordinate</var> in the range of -<em class="ph i">pi</em> to    <em class="ph i">pi</em>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_atan2_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_atan2_2">atan2(xCoordinate, yCoordinate)</a></strong><br>
+    Converts rectangular coordinates (<var class="keyword varname">xCoordinate</var> and    <var class="keyword varname">yCoordinate</var>) to polar (<var class="keyword varname">r</var> and <var class="keyword varname">theta</var>).   This method computes the phase <var class="keyword varname">theta</var> by computing an arc tangent of    <var class="keyword varname">xCoordinate</var>/<var class="keyword varname">yCoordinate</var> in the range of -<em class="ph i">pi</em> to    <em class="ph i">pi</em>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_cbrt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_cbrt">cbrt(decimalValue)</a></strong><br>
+    Returns the cube root of the specified Decimal. The cube root of a negative value is the negative of the cube root of that value's magnitude.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_cbrt_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_cbrt_2">cbrt(doubleValue)</a></strong><br>
+    Returns the cube root of the specified Double. The cube root of a negative value is the negative of the cube root of that value's magnitude.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_ceil" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_ceil">ceil(decimalValue)</a></strong><br>
+    Returns the smallest (closest to negative infinity) Decimal that is not less than the argument and is equal to a mathematical integer.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_ceil_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_ceil_2">ceil(doubleValue)</a></strong><br>
+    Returns the smallest (closest to negative infinity) Double that is not less than the argument and is equal to a mathematical integer.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_cos" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_cos">cos(decimalAngle)</a></strong><br>
+    Returns the trigonometric cosine of the angle specified by          <var class="keyword varname">decimalAngle</var>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_cos_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_cos_2">cos(doubleAngle)</a></strong><br>
+    Returns the trigonometric cosine of the angle specified by       <var class="keyword varname">doubleAngle</var>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_cosh" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_cosh">cosh(decimalAngle)</a></strong><br>
+    Returns the hyperbolic cosine of <var class="keyword varname">decimalAngle</var>. The hyperbolic cosine   of <var class="keyword varname">d</var> is defined to be (<em class="ph i">e</em><sup class="ph sup">x</sup> + <em class="ph i">e</em><sup class="ph sup">-x</sup>)/2 where    <em class="ph i">e</em> is Euler's number. </li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_cosh_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_cosh_2">cosh(doubleAngle)</a></strong><br>
+    Returns the hyperbolic cosine of <var class="keyword varname">doubleAngle</var>. The hyperbolic cosine of    <var class="keyword varname">d</var> is defined to be (<em class="ph i">e</em><sup class="ph sup">x</sup> + <em class="ph i">e</em><sup class="ph sup">-x</sup>)/2 where    <em class="ph i">e</em> is Euler's number. </li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_exp" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_exp">exp(exponentDecimal)</a></strong><br>
+    Returns Euler's number <em class="ph i">e</em> raised to the power of the specified Decimal.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_exp_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_exp_2">exp(exponentDouble)</a></strong><br>
+    Returns Euler's number <em class="ph i">e</em> raised to the power of the specified Double.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_floor" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_floor">floor(decimalValue)</a></strong><br>
+    Returns the largest (closest to positive infinity) Decimal that is not greater than the argument and is equal to a mathematical integer.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_floor_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_floor_2">floor(doubleValue)</a></strong><br>
+    Returns the largest (closest to positive infinity) Double that is not greater than the argument and is equal to a mathematical integer.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_log" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_log">log(decimalValue)</a></strong><br>
+    Returns the natural logarithm (base <em class="ph i">e</em>) of the specified Decimal.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_log_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_log_2">log(doubleValue)</a></strong><br>
+    Returns the natural logarithm (base <em class="ph i">e</em>) of the specified Double.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_log10" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_log10">log10(decimalValue)</a></strong><br>
+    Returns the logarithm (base <em class="ph i">10</em>) of the specified Decimal.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_log10_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_log10_2">log10(doubleValue)</a></strong><br>
+    Returns the logarithm (base <em class="ph i">10</em>) of the specified Double.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_max" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_max">max(decimalValue1, decimalValue2)</a></strong><br>
+    Returns the larger of the two specified Decimals.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_max_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_max_2">max(doubleValue1, doubleValue2)</a></strong><br>
+    Returns the larger of the two specified Doubles.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_max_3" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_max_3">max(integerValue1, integerValue2)</a></strong><br>
+    Returns the larger of the two specified Integers.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_max_4" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_max_4">max(longValue1, longValue2)</a></strong><br>
+    Returns the larger of the two specified Longs.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_min" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_min">min(decimalValue1, decimalValue2)</a></strong><br>
+    Returns the smaller of the two specified Decimals.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_min_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_min_2">min(doubleValue1, doubleValue2)</a></strong><br>
+    Returns the smaller of the two specified Doubles.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_min_3" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_min_3">min(integerValue1, integerValue2)</a></strong><br>
+    Returns the smaller of the two specified Integers.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_min_4" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_min_4">min(longValue1, longValue2)</a></strong><br>
+    Returns the smaller of the two specified Longs.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_mod" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_mod">mod(integerValue1, integerValue2)</a></strong><br>
+    Returns the remainder of <var class="keyword varname">integerValue1</var> divided by    <var class="keyword varname">integerValue2</var>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_mod_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_mod_2">mod(longValue1, longValue2)</a></strong><br>
+    Returns the remainder of <var class="keyword varname">longValue1</var> divided by             <var class="keyword varname">longValue2</var>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_pow" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_pow">pow(doubleValue, exponent)</a></strong><br>
+    Returns the value of the first Double raised to the power of       <var class="keyword varname">exponent</var>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_random" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_random">random()</a></strong><br>
+    Returns a positive Double that is greater than or equal to 0.0 and less than 1.0.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_rint" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_rint">rint(decimalValue)</a></strong><br>
+    Returns the value that is closest in value to <var class="keyword varname">decimalValue</var> and is   equal to a mathematical integer.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_rint_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_rint_2">rint(doubleValue)</a></strong><br>
+    Returns the value that is closest in value to <var class="keyword varname">doubleValue</var> and is equal   to a mathematical integer.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_round" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_round">round(doubleValue)</a></strong><br>
+    Do not use. This method is deprecated as of the Winter '08 release. Instead, use <samp class="codeph apex_code">Math.roundToLong</samp>. Returns the closest Integer to the specified   Double. If the result is less than -2,147,483,648 or greater than 2,147,483,647, Apex generates an   error.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_round_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_round_2">round(decimalValue)</a></strong><br>
+    Returns the rounded approximation of this Decimal. The number  is rounded to zero decimal places using half-even rounding mode, that is, it rounds towards the “nearest neighbor” unless both neighbors are equidistant, in which case, this mode rounds towards the even neighbor. </li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_roundToLong" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_roundToLong">roundToLong(decimalValue)</a></strong><br>
+    Returns the rounded approximation of this Decimal. The number  is rounded to zero decimal places using half-even rounding mode, that is, it rounds towards the “nearest neighbor” unless both neighbors are equidistant, in which case, this mode rounds towards the even neighbor. </li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_roundToLong_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_roundToLong_2">roundToLong(doubleValue)</a></strong><br>
+    Returns the closest Long to the specified Double.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_signum" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_signum">signum(decimalValue)</a></strong><br>
+    Returns the signum function of the specified Decimal, which is 0 if    <var class="keyword varname">decimalValue</var> is 0, 1.0 if <var class="keyword varname">decimalValue</var> is greater than 0,   -1.0 if <var class="keyword varname">decimalValue</var> is less than 0.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_signum_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_signum_2">signum(doubleValue)</a></strong><br>
+    Returns the signum function of the specified Double, which is 0 if    <var class="keyword varname">doubleValue</var> is 0, 1.0 if <var class="keyword varname">doubleValue</var> is greater than 0,   -1.0 if <var class="keyword varname">doubleValue</var> is less than 0.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_sin" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_sin">sin(decimalAngle)</a></strong><br>
+    Returns the trigonometric sine of the angle specified by       <var class="keyword varname">decimalAngle</var>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_sin_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_sin_2">sin(doubleAngle)</a></strong><br>
+    Returns the trigonometric sine of the angle specified by       <var class="keyword varname">doubleAngle</var>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_sinh" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_sinh">sinh(decimalAngle)</a></strong><br>
+    Returns the hyperbolic sine of <var class="keyword varname">decimalAngle</var>. The hyperbolic sine of    <var class="keyword varname">decimalAngle</var> is defined to be (<em class="ph i">e</em><sup class="ph sup">x</sup> - <em class="ph i">e</em><sup class="ph sup">-x</sup>)/2   where <em class="ph i">e</em> is Euler's number. </li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_sinh_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_sinh_2">sinh(doubleAngle)</a></strong><br>
+    Returns the hyperbolic sine of <var class="keyword varname">doubleAngle</var>. The hyperbolic sine of    <var class="keyword varname">doubleAngle</var> is defined to be (<em class="ph i">e</em><sup class="ph sup">x</sup> - <em class="ph i">e</em><sup class="ph sup">-x</sup>)/2   where <em class="ph i">e</em> is Euler's number. </li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_sqrt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_sqrt">sqrt(decimalValue)</a></strong><br>
+    Returns the correctly rounded positive square root of       <var class="keyword varname">decimalValue</var>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_sqrt_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_sqrt_2">sqrt(doubleValue)</a></strong><br>
+    Returns the correctly rounded positive square root of       <var class="keyword varname">doubleValue</var>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_tan" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_tan">tan(decimalAngle)</a></strong><br>
+    Returns the trigonometric tangent of the angle specified by          <var class="keyword varname">decimalAngle</var>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_tan_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_tan_2">tan(doubleAngle)</a></strong><br>
+    Returns the trigonometric tangent of the angle specified by          <var class="keyword varname">doubleAngle</var>.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_tanh" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_tanh">tanh(decimalAngle)</a></strong><br>
+    Returns the hyperbolic tangent of <var class="keyword varname">decimalAngle</var>. The hyperbolic tangent   of <var class="keyword varname">decimalAngle</var> is defined to be (<em class="ph i">e</em><sup class="ph sup">x</sup> -    <em class="ph i">e</em><sup class="ph sup">-x</sup>)/(<em class="ph i">e</em><sup class="ph sup">x</sup> + <em class="ph i">e</em><sup class="ph sup">-x</sup>) where <em class="ph i">e</em> is Euler's   number. In other words, it is equivalent to <samp class="codeph apex_code">sinh(x)/cosinh(x)</samp>. The absolute value of the exact <samp class="codeph apex_code">tanh</samp> is always less than 1.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_tanh_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_math.htm#apex_System_Math_tanh_2">tanh(doubleAngle)</a></strong><br>
+    Returns the hyperbolic tangent of <var class="keyword varname">doubleAngle</var>. The hyperbolic tangent   of <var class="keyword varname">doubleAngle</var> is defined to be (<em class="ph i">e</em><sup class="ph sup">x</sup> -    <em class="ph i">e</em><sup class="ph sup">-x</sup>)/(<em class="ph i">e</em><sup class="ph sup">x</sup> + <em class="ph i">e</em><sup class="ph sup">-x</sup>) where <em class="ph i">e</em> is Euler's   number. In other words, it is equivalent to <samp class="codeph apex_code">sinh(x)/cosinh(x)</samp>. The absolute value of the exact <samp class="codeph apex_code">tanh</samp> is always less than 1.</li>
+    </ul>
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_abs">
+    <a name="apex_System_Math_abs" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">abs(decimalValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the absolute value of the specified Decimal.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> abs(<span class="keyword">Decimal</span> decimalValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_abs_2">
+    <a name="apex_System_Math_abs_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">abs(doubleValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the absolute value of the specified Double.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> abs(<span class="keyword">Double</span> doubleValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_abs_3">
+    <a name="apex_System_Math_abs_3" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">abs(integerValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the absolute value of the specified Integer.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Integer</span> abs(<span class="keyword">Integer</span> integerValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">integerValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_abs_4">
+    <a name="apex_System_Math_abs_4" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">abs(longValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the absolute value of the specified Long.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Long</span> abs(<span class="keyword">Long</span> longValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">longValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_acos">
+    <a name="apex_System_Math_acos" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">acos(decimalAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the arc cosine of an angle, in the range of 0.0
+    through <em class="ph i">pi</em>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> acos(<span class="keyword">Decimal</span> decimalAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_acos_2">
+    <a name="apex_System_Math_acos_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">acos(doubleAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the arc cosine of an angle, in the range of 0.0
+    through <em class="ph i">pi</em>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> acos(<span class="keyword">Double</span> doubleAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_asin">
+    <a name="apex_System_Math_asin" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">asin(decimalAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the arc sine of an angle, in the range of -<em class="ph i">pi</em>/2 through <em class="ph i">pi</em>/2.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> asin(<span class="keyword">Decimal</span> decimalAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_asin_2">
+    <a name="apex_System_Math_asin_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">asin(doubleAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the arc sine of an angle, in the range of -<em class="ph i">pi</em>/2 through <em class="ph i">pi</em>/2.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> asin(<span class="keyword">Double</span> doubleAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_atan">
+    <a name="apex_System_Math_atan" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">atan(decimalAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the arc tangent of an angle, in the range of -<em class="ph i">pi</em>/2 through <em class="ph i">pi</em>/2.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> atan(<span class="keyword">Decimal</span> decimalAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_atan_2">
+    <a name="apex_System_Math_atan_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">atan(doubleAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the arc tangent of an angle, in the range of -<em class="ph i">pi</em>/2 through <em class="ph i">pi</em>/2.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> atan(<span class="keyword">Double</span> doubleAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_atan2">
+    <a name="apex_System_Math_atan2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">atan2(xCoordinate, yCoordinate)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Converts rectangular coordinates (<var class="keyword varname">xCoordinate</var> and
+       <var class="keyword varname">yCoordinate</var>) to polar (<var class="keyword varname">r</var> and <var class="keyword varname">theta</var>).
+      This method computes the phase <var class="keyword varname">theta</var> by computing an arc tangent of
+       <var class="keyword varname">xCoordinate</var>/<var class="keyword varname">yCoordinate</var> in the range of -<em class="ph i">pi</em> to
+       <em class="ph i">pi</em>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> atan2(<span class="keyword">Decimal</span> xCoordinate, <span class="keyword">Decimal</span>
+         yCoordinate)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">xCoordinate</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">yCoordinate</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_atan2_2">
+    <a name="apex_System_Math_atan2_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">atan2(xCoordinate, yCoordinate)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Converts rectangular coordinates (<var class="keyword varname">xCoordinate</var> and
+       <var class="keyword varname">yCoordinate</var>) to polar (<var class="keyword varname">r</var> and <var class="keyword varname">theta</var>).
+      This method computes the phase <var class="keyword varname">theta</var> by computing an arc tangent of
+       <var class="keyword varname">xCoordinate</var>/<var class="keyword varname">yCoordinate</var> in the range of -<em class="ph i">pi</em> to
+       <em class="ph i">pi</em>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> atan2(<span class="keyword">Double</span> xCoordinate, <span class="keyword">Double</span>
+         yCoordinate)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">xCoordinate</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">yCoordinate</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_cbrt">
+    <a name="apex_System_Math_cbrt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">cbrt(decimalValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the cube root of the specified Decimal. The cube
+    root of a negative value is the negative of the cube root of that
+    value's magnitude.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> cbrt(<span class="keyword">Decimal</span> decimalValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_cbrt_2">
+    <a name="apex_System_Math_cbrt_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">cbrt(doubleValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the cube root of the specified Double. The cube
+    root of a negative value is the negative of the cube root of that
+    value's magnitude.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> cbrt(<span class="keyword">Double</span> doubleValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_ceil">
+    <a name="apex_System_Math_ceil" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">ceil(decimalValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the smallest (closest to negative infinity) Decimal
+    that is not less than the argument and is equal to a mathematical
+    integer.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> ceil(<span class="keyword">Decimal</span> decimalValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_ceil_2">
+    <a name="apex_System_Math_ceil_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">ceil(doubleValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the smallest (closest to negative infinity) Double
+    that is not less than the argument and is equal to a mathematical
+    integer.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> ceil(<span class="keyword">Double</span> doubleValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_cos">
+    <a name="apex_System_Math_cos" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">cos(decimalAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the trigonometric cosine of the angle specified by
+             <var class="keyword varname">decimalAngle</var>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> cos(<span class="keyword">Decimal</span> decimalAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_cos_2">
+    <a name="apex_System_Math_cos_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">cos(doubleAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the trigonometric cosine of the angle specified by
+          <var class="keyword varname">doubleAngle</var>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> cos(<span class="keyword">Double</span> doubleAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_cosh">
+    <a name="apex_System_Math_cosh" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">cosh(decimalAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the hyperbolic cosine of <var class="keyword varname">decimalAngle</var>. The hyperbolic cosine
+      of <var class="keyword varname">d</var> is defined to be (<em class="ph i">e</em><sup class="ph sup">x</sup> + <em class="ph i">e</em><sup class="ph sup">-x</sup>)/2 where
+       <em class="ph i">e</em> is Euler's number. </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> cosh(<span class="keyword">Decimal</span> decimalAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_cosh_2">
+    <a name="apex_System_Math_cosh_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">cosh(doubleAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the hyperbolic cosine of <var class="keyword varname">doubleAngle</var>. The hyperbolic cosine of
+       <var class="keyword varname">d</var> is defined to be (<em class="ph i">e</em><sup class="ph sup">x</sup> + <em class="ph i">e</em><sup class="ph sup">-x</sup>)/2 where
+       <em class="ph i">e</em> is Euler's number. </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> cosh(<span class="keyword">Double</span> doubleAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_exp">
+    <a name="apex_System_Math_exp" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">exp(exponentDecimal)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns Euler's number <em class="ph i">e</em> raised to the power of
+    the specified Decimal.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> exp(<span class="keyword">Decimal</span> exponentDecimal)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">exponentDecimal</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_exp_2">
+    <a name="apex_System_Math_exp_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">exp(exponentDouble)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns Euler's number <em class="ph i">e</em> raised to the power of
+    the specified Double.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> exp(<span class="keyword">Double</span> exponentDouble)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">exponentDouble</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_floor">
+    <a name="apex_System_Math_floor" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">floor(decimalValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the largest (closest to positive infinity) Decimal
+    that is not greater than the argument and is equal to a mathematical
+    integer.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> floor(<span class="keyword">Decimal</span> decimalValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_floor_2">
+    <a name="apex_System_Math_floor_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">floor(doubleValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the largest (closest to positive infinity) Double
+    that is not greater than the argument and is equal to a mathematical
+    integer.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> floor(<span class="keyword">Double</span> doubleValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_log">
+    <a name="apex_System_Math_log" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">log(decimalValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the natural logarithm (base <em class="ph i">e</em>) of the specified
+    Decimal.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> log(<span class="keyword">Decimal</span> decimalValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_log_2">
+    <a name="apex_System_Math_log_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">log(doubleValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the natural logarithm (base <em class="ph i">e</em>) of the specified
+    Double.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> log(<span class="keyword">Double</span> doubleValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_log10">
+    <a name="apex_System_Math_log10" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">log10(decimalValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the logarithm (base <em class="ph i">10</em>) of the specified
+    Decimal.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> log10(<span class="keyword">Decimal</span> decimalValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_log10_2">
+    <a name="apex_System_Math_log10_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">log10(doubleValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the logarithm (base <em class="ph i">10</em>) of the specified
+    Double.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> log10(<span class="keyword">Double</span> doubleValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_max">
+    <a name="apex_System_Math_max" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">max(decimalValue1, decimalValue2)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the larger of the two specified Decimals.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> max(<span class="keyword">Decimal</span> decimalValue1, <span class="keyword">Decimal</span>
+         decimalValue2)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue1</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue2</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_max_2">
+    <a name="apex_System_Math_max_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">max(doubleValue1, doubleValue2)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the larger of the two specified Doubles.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> max(<span class="keyword">Double</span> doubleValue1, <span class="keyword">Double</span>
+         doubleValue2)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue1</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue2</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_max_3">
+    <a name="apex_System_Math_max_3" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">max(integerValue1, integerValue2)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the larger of the two specified Integers.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Integer</span> max(<span class="keyword">Integer</span> integerValue1, <span class="keyword">Integer</span>
+         integerValue2)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">integerValue1</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">integerValue2</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_max_4">
+    <a name="apex_System_Math_max_4" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">max(longValue1, longValue2)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the larger of the two specified Longs.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Long</span> max(<span class="keyword">Long</span> longValue1, <span class="keyword">Long</span>
+        longValue2)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">longValue1</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">longValue2</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_min">
+    <a name="apex_System_Math_min" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">min(decimalValue1, decimalValue2)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the smaller of the two specified Decimals.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> min(<span class="keyword">Decimal</span> decimalValue1, <span class="keyword">Decimal</span>
+         decimalValue2)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue1</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue2</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_min_2">
+    <a name="apex_System_Math_min_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">min(doubleValue1, doubleValue2)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the smaller of the two specified Doubles.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> min(<span class="keyword">Double</span> doubleValue1, <span class="keyword">Double</span>
+         doubleValue2)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue1</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue2</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_min_3">
+    <a name="apex_System_Math_min_3" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">min(integerValue1, integerValue2)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the smaller of the two specified Integers.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Integer</span> min(<span class="keyword">Integer</span> integerValue1, <span class="keyword">Integer</span>
+         integerValue2)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">integerValue1</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">integerValue2</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_min_4">
+    <a name="apex_System_Math_min_4" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">min(longValue1, longValue2)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the smaller of the two specified Longs.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Long</span> min(<span class="keyword">Long</span> longValue1, <span class="keyword">Long</span>
+        longValue2)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">longValue1</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">longValue2</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_mod">
+    <a name="apex_System_Math_mod" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">mod(integerValue1, integerValue2)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the remainder of <var class="keyword varname">integerValue1</var> divided by
+       <var class="keyword varname">integerValue2</var>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Integer</span> mod(<span class="keyword">Integer</span> integerValue1, <span class="keyword">Integer</span>
+         integerValue2)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">integerValue1</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">integerValue2</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_mod_2">
+    <a name="apex_System_Math_mod_2" data-id=""><!-- --></a>
+        <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">mod(longValue1,
+                longValue2)</span></span></h3>
+    
+        
+        
+        <div class="body refbody">
+    <div class="shortdesc">Returns the remainder of <var class="keyword varname">longValue1</var> divided by
+                <var class="keyword varname">longValue2</var>.</div>
+    
+            <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    
+                
+                <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Long</span> mod(<span class="keyword">Long</span> longValue1, <span class="keyword">Long</span>
+                        longValue2)</samp></p>
+    
+                
+            </div>
+    
+            <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    
+                
+                <dl class="dl detailList">
+                    
+                        <dt class="dt dlterm"><var class="keyword varname">longValue1</var></dt>
+    
+                        <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a>
+    </dd>
+    
+                    
+                    
+                        <dt class="dt dlterm"><var class="keyword varname">longValue2</var></dt>
+    
+                        <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a>
+    </dd>
+    
+                    
+                </dl>
+    
+            </div>
+    
+            <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    
+                
+                <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a></p>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_pow">
+    <a name="apex_System_Math_pow" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">pow(doubleValue, exponent)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the value of the first Double raised to the power of
+          <var class="keyword varname">exponent</var>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> pow(<span class="keyword">Double</span> doubleValue, <span class="keyword">Double</span>
+                   exponent)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">exponent</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_random">
+    <a name="apex_System_Math_random" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">random()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns a positive Double that is greater than or equal
+    to 0.0 and less than 1.0.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> random()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_rint">
+    <a name="apex_System_Math_rint" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">rint(decimalValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the value that is closest in value to <var class="keyword varname">decimalValue</var> and is
+      equal to a mathematical integer.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> rint(<span class="keyword">Decimal</span> decimalValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_rint_2">
+    <a name="apex_System_Math_rint_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">rint(doubleValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the value that is closest in value to <var class="keyword varname">doubleValue</var> and is equal
+      to a mathematical integer.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> rint(<span class="keyword">Double</span> doubleValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_round">
+    <a name="apex_System_Math_round" data-id=""><!-- --></a>
+     <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">round(doubleValue)</span></span></h3>
+    
+     
+     
+     <div class="body refbody">
+    <div class="shortdesc">Do not use. This method is deprecated as of the Winter '08 release. Instead, use <samp class="codeph apex_code">Math.roundToLong</samp>. Returns the closest Integer to the specified
+      Double. If the result is less than -2,147,483,648 or greater than 2,147,483,647, Apex generates an
+      error.</div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    
+       
+       <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Integer</span> round(<span class="keyword">Double</span> doubleValue)</samp></p>
+    
+       
+      </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    
+       
+       <dl class="dl detailList">
+        
+         <dt class="dt dlterm"><var class="keyword varname">doubleValue</var></dt>
+    
+         <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+        
+       </dl>
+    
+      </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    
+       
+       <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    
+      </div>
+    
+     </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_round_2">
+    <a name="apex_System_Math_round_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">round(decimalValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the rounded approximation of this Decimal. The
+    number  is rounded to zero decimal places using half-even rounding
+    mode, that is, it rounds towards the “nearest neighbor”
+    unless both neighbors are equidistant, in which case, this mode rounds
+    towards the even neighbor. </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Integer</span> round(<span class="keyword">Decimal</span> decimalValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Usage</h4>
+    <p class="p">Note that this rounding mode
+    statistically  minimizes cumulative error when applied repeatedly
+    over a sequence  of calculations.</p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_roundToLong">
+    <a name="apex_System_Math_roundToLong" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">roundToLong(decimalValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the rounded approximation of this Decimal. The
+    number  is rounded to zero decimal places using half-even rounding
+    mode, that is, it rounds towards the “nearest neighbor”
+    unless both neighbors are equidistant, in which case, this mode rounds
+    towards the even neighbor. </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Long</span> roundToLong(<span class="keyword">Decimal</span> decimalValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Usage</h4>
+    <p class="p">Note that this rounding mode
+    statistically  minimizes cumulative error when applied repeatedly
+    over a sequence  of calculations.</p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_roundToLong_2">
+    <a name="apex_System_Math_roundToLong_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">roundToLong(doubleValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the closest Long to the specified Double.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Long</span> roundToLong(<span class="keyword">Double</span> doubleValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_signum">
+    <a name="apex_System_Math_signum" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">signum(decimalValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the signum function of the specified Decimal, which is 0 if
+       <var class="keyword varname">decimalValue</var> is 0, 1.0 if <var class="keyword varname">decimalValue</var> is greater than 0,
+      -1.0 if <var class="keyword varname">decimalValue</var> is less than 0.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> signum(<span class="keyword">Decimal</span> decimalValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_signum_2">
+    <a name="apex_System_Math_signum_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">signum(doubleValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the signum function of the specified Double, which is 0 if
+       <var class="keyword varname">doubleValue</var> is 0, 1.0 if <var class="keyword varname">doubleValue</var> is greater than 0,
+      -1.0 if <var class="keyword varname">doubleValue</var> is less than 0.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> signum(<span class="keyword">Double</span> doubleValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_sin">
+    <a name="apex_System_Math_sin" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">sin(decimalAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the trigonometric sine of the angle specified by
+          <var class="keyword varname">decimalAngle</var>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> sin(<span class="keyword">Decimal</span> decimalAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_sin_2">
+    <a name="apex_System_Math_sin_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">sin(doubleAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the trigonometric sine of the angle specified by
+          <var class="keyword varname">doubleAngle</var>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> sin(<span class="keyword">Double</span> doubleAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_sinh">
+    <a name="apex_System_Math_sinh" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">sinh(decimalAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the hyperbolic sine of <var class="keyword varname">decimalAngle</var>. The hyperbolic sine of
+       <var class="keyword varname">decimalAngle</var> is defined to be (<em class="ph i">e</em><sup class="ph sup">x</sup> - <em class="ph i">e</em><sup class="ph sup">-x</sup>)/2
+      where <em class="ph i">e</em> is Euler's number. </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> sinh(<span class="keyword">Decimal</span> decimalAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a> </p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_sinh_2">
+    <a name="apex_System_Math_sinh_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">sinh(doubleAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the hyperbolic sine of <var class="keyword varname">doubleAngle</var>. The hyperbolic sine of
+       <var class="keyword varname">doubleAngle</var> is defined to be (<em class="ph i">e</em><sup class="ph sup">x</sup> - <em class="ph i">e</em><sup class="ph sup">-x</sup>)/2
+      where <em class="ph i">e</em> is Euler's number. </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> sinh(<span class="keyword">Double</span> doubleAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_sqrt">
+    <a name="apex_System_Math_sqrt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">sqrt(decimalValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the correctly rounded positive square root of
+          <var class="keyword varname">decimalValue</var>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> sqrt(<span class="keyword">Decimal</span> decimalValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_sqrt_2">
+    <a name="apex_System_Math_sqrt_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">sqrt(doubleValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the correctly rounded positive square root of
+          <var class="keyword varname">doubleValue</var>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> sqrt(<span class="keyword">Double</span> doubleValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleValue</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_tan">
+    <a name="apex_System_Math_tan" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">tan(decimalAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the trigonometric tangent of the angle specified by
+             <var class="keyword varname">decimalAngle</var>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> tan(<span class="keyword">Decimal</span> decimalAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_tan_2">
+    <a name="apex_System_Math_tan_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">tan(doubleAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the trigonometric tangent of the angle specified by
+             <var class="keyword varname">doubleAngle</var>.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> tan(<span class="keyword">Double</span> doubleAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_tanh">
+    <a name="apex_System_Math_tanh" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">tanh(decimalAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the hyperbolic tangent of <var class="keyword varname">decimalAngle</var>. The hyperbolic tangent
+      of <var class="keyword varname">decimalAngle</var> is defined to be (<em class="ph i">e</em><sup class="ph sup">x</sup> -
+       <em class="ph i">e</em><sup class="ph sup">-x</sup>)/(<em class="ph i">e</em><sup class="ph sup">x</sup> + <em class="ph i">e</em><sup class="ph sup">-x</sup>) where <em class="ph i">e</em> is Euler's
+      number. In other words, it is equivalent to <samp class="codeph apex_code">sinh(x)/cosinh(x)</samp>. The absolute value of the exact <samp class="codeph apex_code">tanh</samp> is always less than 1.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Decimal</span> tanh(<span class="keyword">Decimal</span> decimalAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">decimalAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal" title="Contains methods for the Decimal primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_decimal.htm#apex_methods_system_decimal">Decimal</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Math_tanh_2">
+    <a name="apex_System_Math_tanh_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">tanh(doubleAngle)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the hyperbolic tangent of <var class="keyword varname">doubleAngle</var>. The hyperbolic tangent
+      of <var class="keyword varname">doubleAngle</var> is defined to be (<em class="ph i">e</em><sup class="ph sup">x</sup> -
+       <em class="ph i">e</em><sup class="ph sup">-x</sup>)/(<em class="ph i">e</em><sup class="ph sup">x</sup> + <em class="ph i">e</em><sup class="ph sup">-x</sup>) where <em class="ph i">e</em> is Euler's
+      number. In other words, it is equivalent to <samp class="codeph apex_code">sinh(x)/cosinh(x)</samp>. The absolute value of the exact <samp class="codeph apex_code">tanh</samp> is always less than 1.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Double</span> tanh(<span class="keyword">Double</span> doubleAngle)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">doubleAngle</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double" title="Contains methods for the Double primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_double.htm#apex_methods_system_double">Double</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    </div>

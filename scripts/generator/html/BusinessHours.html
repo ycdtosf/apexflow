@@ -1,0 +1,303 @@
+<div class="topic reference nested1" lang="en-us" id="apex_System_BusinessHours_methods">
+    <a name="apex_System_BusinessHours_methods" data-id=""><!-- --></a>
+    <h2 class="helpHead2"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a>BusinessHours Methods</span></h2>
+    
+    
+    <div class="body refbody">
+    <div class="section">
+    <p class="p">The following are methods for <samp class="codeph apex_code">BusinessHours</samp>. All methods are static.</p>
+    </div>
+    
+    </div>
+    
+    <div id="sfdc:seealso" class="related-links">
+    <ul class="ullinks">
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_classes_businesshours.htm#apex_System_BusinessHours_add" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_classes_businesshours.htm#apex_System_BusinessHours_add">add(businessHoursId, startDate, intervalMilliseconds)</a></strong><br>
+    Adds an interval of time from a start Datetime traversing business hours only. Returns the result Datetime in the local time zone.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_classes_businesshours.htm#apex_System_BusinessHours_addGmt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_classes_businesshours.htm#apex_System_BusinessHours_addGmt">addGmt(businessHoursId, startDate, intervalMilliseconds)</a></strong><br>
+    Adds an interval of milliseconds from a start Datetime traversing business hours only. Returns the result Datetime in GMT.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_classes_businesshours.htm#apex_System_BusinessHours_diff" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_classes_businesshours.htm#apex_System_BusinessHours_diff">diff(businessHoursId, startDate, endDate)</a></strong><br>
+    Returns the difference in milliseconds between a start and end Datetime based on a     specific set of business hours.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_classes_businesshours.htm#apex_System_BusinessHours_isWithin" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_classes_businesshours.htm#apex_System_BusinessHours_isWithin">isWithin(businessHoursId, targetDate)</a></strong><br>
+    Returns <samp class="codeph apex_code"><span class="keyword">true</span></samp> if the specified target date occurs within business hours. Holidays are included in the calculation.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_classes_businesshours.htm#apex_System_BusinessHours_nextStartDate" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_classes_businesshours.htm#apex_System_BusinessHours_nextStartDate">nextStartDate(businessHoursId, targetDate)</a></strong><br>
+    Starting from the specified target date, returns the next date when business hours are open. If the specified target date falls within business hours, this target date is returned.</li>
+    </ul>
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_BusinessHours_add">
+    <a name="apex_System_BusinessHours_add" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">add(businessHoursId, startDate, intervalMilliseconds)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Adds an interval of time from a start Datetime traversing
+    business hours only. Returns the result Datetime in the local time
+    zone.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> add(<span class="keyword">String</span> businessHoursId, <span class="keyword">Datetime</span>
+         startDate, <span class="keyword">Long</span> intervalMilliseconds)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">businessHoursId</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">startDate</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime">Datetime</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">intervalMilliseconds</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a>
+    </dd>
+    
+    <dd class="dd">Interval value should be provided in milliseconds, however time
+    precision smaller than one minute is ignored.</dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime">Datetime</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_BusinessHours_addGmt">
+    <a name="apex_System_BusinessHours_addGmt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">addGmt(businessHoursId, startDate, intervalMilliseconds)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Adds an interval of milliseconds from a start Datetime
+    traversing business hours only. Returns the result Datetime in GMT.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> addGmt(<span class="keyword">String</span> businessHoursId, <span class="keyword">Datetime</span>
+         startDate, <span class="keyword">Long</span> intervalMilliseconds)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">businessHoursId</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">startDate</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime">Datetime</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">intervalMilliseconds</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime">Datetime</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_BusinessHours_diff">
+    <a name="apex_System_BusinessHours_diff" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">diff(businessHoursId, startDate, endDate)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the difference in milliseconds between a start and end Datetime based on a
+        specific set of business hours.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Long</span> diff(<span class="keyword">String</span> businessHoursId,
+    <span class="keyword">Datetime</span> startDate, <span class="keyword">Datetime</span> endDate)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">businessHoursId</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">startDate</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime">Datetime</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">endDate</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime">Datetime</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a></p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_BusinessHours_isWithin">
+    <a name="apex_System_BusinessHours_isWithin" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">isWithin(businessHoursId, targetDate)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns <samp class="codeph apex_code"><span class="keyword">true</span></samp> if
+    the specified target date occurs within business hours. Holidays are
+    included in the calculation.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Boolean</span> isWithin(<span class="keyword">String</span> businessHoursId,
+    <span class="keyword">Datetime</span> targetDate)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">businessHoursId</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+    <dd class="dd">The business hours ID.</dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">targetDate</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime">Datetime</a>
+    </dd>
+    
+    <dd class="dd">The date to verify.</dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_boolean.htm#apex_methods_system_boolean" title="Contains methods for the Boolean primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_boolean.htm#apex_methods_system_boolean">Boolean</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <p class="p">The following example finds whether
+    a given time is within the default business hours.</p>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_BusinessHours_nextStartDate">
+    <a name="apex_System_BusinessHours_nextStartDate" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">nextStartDate(businessHoursId, targetDate)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Starting from the specified target date, returns the next
+    date when business hours are open. If the specified target date falls
+    within business hours, this target date is returned.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> nextStartDate(<span class="keyword">String</span>
+    businessHoursId, <span class="keyword">Datetime</span> targetDate)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">businessHoursId</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+    <dd class="dd">The business hours ID.</dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">targetDate</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime">Datetime</a>
+    </dd>
+    
+    <dd class="dd">The date used as a start date to obtain the next date.</dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_methods_system_datetime">Datetime</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <p class="p">The following example finds the
+    next date starting from the target date when business hours reopens.
+    If the target date is within the given business hours, the target
+    date is returned. The returned time is in the local time zone.</p>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    </div>

@@ -1,0 +1,2082 @@
+<div class="topic reference nested1" lang="en-us" id="apex_System_Datetime_methods">
+    <a name="apex_System_Datetime_methods" data-id=""><!-- --></a>
+    <h2 class="helpHead2"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a>Datetime Methods</span></h2>
+    
+    
+    <div class="body refbody">
+    <div class="section">
+    <p class="p">The following are methods for <samp class="codeph apex_code"><span class="keyword">Datetime</span></samp>.</p>
+    </div>
+    
+    </div>
+    
+    <div id="sfdc:seealso" class="related-links">
+    <ul class="ullinks">
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_addDays" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_addDays">addDays(additionalDays)</a></strong><br>
+    Adds the specified number of days to a Datetime.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_addHours" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_addHours">addHours(additionalHours)</a></strong><br>
+    Adds the specified number of hours to a Datetime.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_addMinutes" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_addMinutes">addMinutes(additionalMinutes)</a></strong><br>
+    Adds the specified number of minutes to a Datetime.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_addMonths" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_addMonths">addMonths(additionalMonths)</a></strong><br>
+    Adds the specified number of months to a Datetime.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_addSeconds" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_addSeconds">addSeconds(additionalSeconds)</a></strong><br>
+    Adds the specified number of seconds to a Datetime.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_addYears" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_addYears">addYears(additionalYears)</a></strong><br>
+    Adds the specified number of years to a Datetime.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_date" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_date">date()</a></strong><br>
+    Returns the Date component of a Datetime in the local time zone of the context user. </li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_dateGMT" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_dateGMT">dateGMT()</a></strong><br>
+    Return the Date component of a Datetime in the GMT time zone.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_day" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_day">day()</a></strong><br>
+    Returns the day-of-month component of a Datetime in the local time zone of the context user.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_dayGmt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_dayGmt">dayGmt()</a></strong><br>
+    Returns the day-of-month component of a Datetime in the GMT time zone.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_dayOfYear" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_dayOfYear">dayOfYear()</a></strong><br>
+    Returns the day-of-year component of a Datetime in the local time zone of the context user.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_dayOfYearGmt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_dayOfYearGmt">dayOfYearGmt()</a></strong><br>
+    Returns the day-of-year component of a Datetime in the GMT time zone.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_format" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_format">format()</a></strong><br>
+    Converts the date to the local time zone and returns the converted date as a formatted string using the locale of the context user. If the time zone cannot be determined, GMT is used.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_format_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_format_2">format(dateFormatString)</a></strong><br>
+    Converts the date to the local time zone and returns the converted date as a string using the supplied Java simple date format. If the time zone cannot be determined, GMT is used.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_format_3" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_format_3">format(dateFormatString, timezone)</a></strong><br>
+    Converts the date to the specified time zone and returns the converted date as a string using the supplied Java simple date format. If the supplied time zone is not in the correct format, GMT is used.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_formatGmt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_formatGmt">formatGmt(dateFormatString)</a></strong><br>
+    Returns a Datetime as a string using the supplied Java simple date format and the GMT time zone.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_formatLong" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_formatLong">formatLong()</a></strong><br>
+    Converts the date to the local time zone and returns the converted date in long date format.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_getTime" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_getTime">getTime()</a></strong><br>
+    Returns the number of milliseconds since January 1, 1970, 00:00:00 GMT represented by this DateTime object.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_hour" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_hour">hour()</a></strong><br>
+    Returns the hour component of a Datetime in the local time zone of the context user.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_hourGmt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_hourGmt">hourGmt()</a></strong><br>
+    Returns the hour component of a Datetime in the GMT time zone.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_isSameDay" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_isSameDay">isSameDay(dateToCompare)</a></strong><br>
+    Returns true if the Datetime that called the method is the same as the specified Datetime in the local time zone of the context user.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_millisecond" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_millisecond">millisecond()</a></strong><br>
+    Return the millisecond component of a Datetime in the local time zone of the context user.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_millisecondGmt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_millisecondGmt">millisecondGmt()</a></strong><br>
+    Return the millisecond component of a Datetime in the GMT time zone.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_minute" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_minute">minute()</a></strong><br>
+    Returns the minute component of a Datetime in the local time zone of the context user.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_minuteGmt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_minuteGmt">minuteGmt()</a></strong><br>
+    Returns the minute component of a Datetime in the GMT time zone.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_month" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_month">month()</a></strong><br>
+    Returns the month component of a Datetime in the local time zone of the context user (1=Jan).</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_monthGmt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_monthGmt">monthGmt()</a></strong><br>
+    Returns the month component of a Datetime in the GMT time zone (1=Jan).</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstance" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstance">newInstance(milliseconds)</a></strong><br>
+    Constructs a Datetime and initializes it to represent the specified number of     milliseconds since January 1, 1970, 00:00:00 GMT.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstance_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstance_2">newInstance(date, time)</a></strong><br>
+    Constructs a DateTime from the specified date and time in the local time     zone.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstance_3" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstance_3">newInstance(year, month, day)</a></strong><br>
+    Constructs a Datetime from Integer representations of the specified year, month (1=Jan),   and day at midnight in the local time zone.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstance_4" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstance_4">newInstance(year, month, day, hour, minute, second)</a></strong><br>
+    Constructs a Datetime from Integer representations of the specified year, month (1=Jan),   day, hour, minute, and second in the local time zone.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstanceGmt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstanceGmt">newInstanceGmt(date, time)</a></strong><br>
+    Constructs a DateTime from the specified date and time in the GMT time zone. </li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstanceGmt_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstanceGmt_2">newInstanceGmt(year, month, date)</a></strong><br>
+    Constructs a Datetime from Integer representations of the specified year, month (1=Jan), and day at midnight in the GMT time zone</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstanceGmt_3" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_newInstanceGmt_3">newInstanceGmt(year, month, date, hour, minute, second)</a></strong><br>
+    Constructs a Datetime from Integer representations of the specified year, month (1=Jan), day, hour, minute, and second in the GMT time zone</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_now" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_now">now()</a></strong><br>
+    Returns the current Datetime based on a GMT calendar. </li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_parse" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_parse">parse(datetimeString)</a></strong><br>
+    Constructs a Datetime from the given String in the local time zone and in the format         of the user locale. </li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_second" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_second">second()</a></strong><br>
+    Returns the second component of a Datetime in the local time zone of the context user.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_secondGmt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_secondGmt">secondGmt()</a></strong><br>
+    Returns the second component of a Datetime in the GMT time zone.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_time" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_time">time()</a></strong><br>
+    Returns the time component of a Datetime in the local time zone of the context user.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_timeGmt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_timeGmt">timeGmt()</a></strong><br>
+    Returns the time component of a Datetime in the GMT time zone.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_valueOf" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_valueOf">valueOf(dateTimeString)</a></strong><br>
+    Returns a Datetime that contains the value of the specified string.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_valueOf_2" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_valueOf_2">valueOf(fieldValue)</a></strong><br>
+    Converts the specified object to a Datetime. Use this method to convert a history     tracking field value or an object that represents a Datetime value.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_valueOfGmt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_valueOfGmt">valueOfGmt(dateTimeString)</a></strong><br>
+    Returns a Datetime that contains the value of the specified String.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_year" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_year">year()</a></strong><br>
+    Returns the year component of a Datetime in the local time zone of the context user.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_yearGmt" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_datetime.htm#apex_System_Datetime_yearGmt">yearGmt()</a></strong><br>
+    Returns the year component of a Datetime in the GMT time zone.</li>
+    </ul>
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_addDays">
+    <a name="apex_System_Datetime_addDays" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">addDays(additionalDays)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Adds the specified number of days to a Datetime.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Datetime</span> addDays(<span class="keyword">Integer</span> additionalDays)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">additionalDays</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_addHours">
+    <a name="apex_System_Datetime_addHours" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">addHours(additionalHours)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Adds the specified number of hours to a Datetime.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Datetime</span> addHours(<span class="keyword">Integer</span> additionalHours)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">additionalHours</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_addMinutes">
+    <a name="apex_System_Datetime_addMinutes" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">addMinutes(additionalMinutes)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Adds the specified number of minutes to a Datetime.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Datetime</span> addMinutes(<span class="keyword">Integer</span> additionalMinutes)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">additionalMinutes</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_addMonths">
+    <a name="apex_System_Datetime_addMonths" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">addMonths(additionalMonths)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Adds the specified number of months to a Datetime.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Datetime</span> addMonths(<span class="keyword">Integer</span> additionalMonths)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">additionalMonths</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_addSeconds">
+    <a name="apex_System_Datetime_addSeconds" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">addSeconds(additionalSeconds)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Adds the specified number of seconds to a Datetime.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Datetime</span> addSeconds(<span class="keyword">Integer</span> additionalSeconds)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">additionalSeconds</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_addYears">
+    <a name="apex_System_Datetime_addYears" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">addYears(additionalYears)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Adds the specified number of years to a Datetime.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Datetime</span> addYears(<span class="keyword">Integer</span> additionalYears)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">additionalYears</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_date">
+    <a name="apex_System_Datetime_date" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">date()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the Date component of a Datetime in the local time
+    zone of the context user. </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Date</span> date()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_methods_system_date" title="Contains methods for the Date primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_methods_system_date">Date</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_dateGMT">
+    <a name="apex_System_Datetime_dateGMT" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">dateGMT()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Return the Date component of a Datetime in the GMT time
+    zone.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Date</span> dateGMT()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_methods_system_date" title="Contains methods for the Date primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_methods_system_date">Date</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_day">
+    <a name="apex_System_Datetime_day" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">day()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the day-of-month component of a Datetime in the
+    local time zone of the context user.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> day()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_dayGmt">
+    <a name="apex_System_Datetime_dayGmt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">dayGmt()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the day-of-month component of a Datetime in the
+    GMT time zone.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> dayGmt()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_dayOfYear">
+    <a name="apex_System_Datetime_dayOfYear" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">dayOfYear()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the day-of-year component of a Datetime in the
+    local time zone of the context user.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> dayOfYear()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <p class="p">For example, February 5, 2008 08:30:12
+    would be day 36.</p>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_dayOfYearGmt">
+    <a name="apex_System_Datetime_dayOfYearGmt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">dayOfYearGmt()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the day-of-year component of a Datetime in the
+    GMT time zone.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> dayOfYearGmt()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_format">
+    <a name="apex_System_Datetime_format" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">format()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Converts the date to the local time zone and returns the
+    converted date as a formatted string using the locale of the context
+    user. If the time zone cannot be determined, GMT is used.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">String</span> format()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+                            
+                            <div class="box message info"><doc-content-callout><p> The sample is executed in an org where the “Enable ICU Locale
+                                    Formats” crucial update is enabled. See <a class="xref" href="https://releasenotes.docs.salesforce.com/en-us/spring20/release-notes/rn_forcecom_globalization_enable_icu_cruc.htm" target="_blank" data-id="https://releasenotes.docs.salesforce.com/en-us/spring20/release-notes/rn_forcecom_globalization_enable_icu_cruc.htm">https://releasenotes.docs.salesforce.com/en-us/spring20/release-notes/rn_forcecom_globalization_enable_icu_cruc.htm</a>.</p></doc-content-callout></div>
+    
+                            <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+                    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_format_2">
+    <a name="apex_System_Datetime_format_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">format(dateFormatString)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Converts the date to the local time zone and returns the
+    converted date as a string using the supplied Java simple date format.
+    If the time zone cannot be determined, GMT is used.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">String</span> format(<span class="keyword">String</span> dateFormatString)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">dateFormatString</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Usage</h4>
+    <p class="p"><span class="ph" id="java_simple_date_format"><a name="java_simple_date_format" data-id=""><!-- --></a>For more information on the Java simple date format, see <a class="xref" href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html" target="_blank" title="html (New Window)" data-id="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html">Java SimpleDateFormat</a>.</span></p>
+    </div>
+    
+     <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_format_3">
+    <a name="apex_System_Datetime_format_3" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">format(dateFormatString, timezone)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Converts the date to the specified time zone and returns
+    the converted date as a string using the supplied Java simple date
+    format. If the supplied time zone is not in the correct format, GMT
+    is used.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">String</span> format(<span class="keyword">String</span> dateFormatString, <span class="keyword">String</span>
+              timezone)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">dateFormatString</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">timezone</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+    <dd class="dd">Valid time zone values for the <var class="keyword varname">timezone</var> argument
+    are the time zones of the Java TimeZone class that correspond to the
+    time zones returned by the <a class="xref" href="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getAvailableIDs()" target="_blank" title="HTML (New Window)" data-id="http://docs.oracle.com/javase/6/docs/api/java/util/TimeZone.html#getAvailableIDs()">TimeZone.getAvailableIDs</a> method in Java. We recommend you use full time zone names, not the
+    three-letter abbreviations.</dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Usage</h4>
+    <p class="p">For more information on the Java simple date format, see <a class="xref" href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html" target="_blank" title="html (New Window)" data-id="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html">Java SimpleDateFormat</a>.</p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <div class="p">This example uses <samp class="codeph apex_code">format</samp> to convert a GMT date to the
+    America/New_York time zone and formats the date using the specified
+    date format.<div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_formatGmt">
+    <a name="apex_System_Datetime_formatGmt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">formatGmt(dateFormatString)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns a Datetime as a string using the supplied Java
+    simple date format and the GMT time zone.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">String</span> formatGmt(<span class="keyword">String</span> dateFormatString)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">dateFormatString</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Usage</h4>
+    <p class="p">For more information on the Java simple date format, see <a class="xref" href="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html" target="_blank" title="html (New Window)" data-id="http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html">Java SimpleDateFormat</a>.</p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_formatLong">
+    <a name="apex_System_Datetime_formatLong" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">formatLong()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Converts the date to the local time zone and returns the
+    converted date in long date format.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">String</span> formatLong()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_getTime">
+    <a name="apex_System_Datetime_getTime" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">getTime()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the number of milliseconds since January 1, 1970,
+    00:00:00 GMT represented by this DateTime object.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Long</span> getTime()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_hour">
+    <a name="apex_System_Datetime_hour" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">hour()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the hour component of a Datetime in the local time
+    zone of the context user.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> hour()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_hourGmt">
+    <a name="apex_System_Datetime_hourGmt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">hourGmt()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the hour component of a Datetime in the GMT time
+    zone.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> hourGmt()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_isSameDay">
+    <a name="apex_System_Datetime_isSameDay" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">isSameDay(dateToCompare)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns true if the Datetime that called the method is
+    the same as the specified Datetime in the local time zone of the context
+    user.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Boolean</span> isSameDay(<span class="keyword">Datetime</span> dateToCompare)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">dateToCompare</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_boolean.htm#apex_methods_system_boolean" title="Contains methods for the Boolean primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_boolean.htm#apex_methods_system_boolean">Boolean</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_millisecond">
+    <a name="apex_System_Datetime_millisecond" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">millisecond()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Return the millisecond component of a Datetime in the local
+    time zone of the context user.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> millisecond()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_millisecondGmt">
+    <a name="apex_System_Datetime_millisecondGmt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">millisecondGmt()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Return the millisecond component of a Datetime in the GMT
+    time zone.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> millisecondGmt()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_minute">
+    <a name="apex_System_Datetime_minute" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">minute()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the minute component of a Datetime in the local
+    time zone of the context user.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> minute()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_minuteGmt">
+    <a name="apex_System_Datetime_minuteGmt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">minuteGmt()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the minute component of a Datetime in the GMT time
+    zone.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> minuteGmt()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_month">
+    <a name="apex_System_Datetime_month" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">month()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the month component of a Datetime in the local
+    time zone of the context user (1=Jan).</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> month()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_monthGmt">
+    <a name="apex_System_Datetime_monthGmt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">monthGmt()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the month component of a Datetime in the GMT time
+    zone (1=Jan).</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> monthGmt()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_newInstance">
+    <a name="apex_System_Datetime_newInstance" data-id=""><!-- --></a>
+      <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">newInstance(milliseconds)</span></span></h3>
+    
+      
+      
+      <div class="body refbody">
+    <div class="shortdesc">Constructs a Datetime and initializes it to represent the specified number of
+        milliseconds since January 1, 1970, 00:00:00 GMT.</div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    
+          
+          <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> newInstance(<span class="keyword">Long</span>
+              milliseconds)</samp></p>
+    
+          
+        </div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    
+          
+          <dl class="dl detailList">
+            
+              <dt class="dt dlterm"><var class="keyword varname">milliseconds</var></dt>
+    
+              <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long" title="Contains methods for the Long primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_long.htm#apex_methods_system_long">Long</a>
+    </dd>
+    
+            
+          </dl>
+    
+        </div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    
+          
+          <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    
+          <p class="p">The returned date is in the GMT time zone.</p>
+    
+        </div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+          
+          <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+        </div>
+    
+      </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_newInstance_2">
+    <a name="apex_System_Datetime_newInstance_2" data-id=""><!-- --></a>
+      <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">newInstance(date,
+        time)</span></span></h3>
+    
+      
+      
+      <div class="body refbody">
+    <div class="shortdesc">Constructs a DateTime from the specified date and time in the local time
+        zone.</div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    
+          
+          <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> newInstance(<span class="keyword">Date</span> date, <span class="keyword">Time</span>
+              time)</samp></p>
+    
+          
+        </div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    
+          
+          <dl class="dl detailList">
+            
+              <dt class="dt dlterm"><var class="keyword varname">date</var></dt>
+    
+              <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_methods_system_date" title="Contains methods for the Date primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_methods_system_date">Date</a>
+    </dd>
+    
+            
+            
+              <dt class="dt dlterm"><var class="keyword varname">time</var></dt>
+    
+              <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_time.htm#apex_methods_system_time" title="Contains methods for the Time primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_time.htm#apex_methods_system_time">Time</a>
+    </dd>
+    
+            
+          </dl>
+    
+        </div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    
+          
+          <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    
+          <p class="p">The returned date is in the GMT time zone.</p>
+    
+        </div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+          
+          <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+        </div>
+    
+      </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_newInstance_3">
+    <a name="apex_System_Datetime_newInstance_3" data-id=""><!-- --></a>
+     <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">newInstance(year, month,
+       day)</span></span></h3>
+    
+     
+     
+     <div class="body refbody">
+    <div class="shortdesc">Constructs a Datetime from Integer representations of the specified year, month (1=Jan),
+      and day at midnight in the local time zone.</div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    
+       
+       <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> newInstance(<span class="keyword">Integer</span> year, <span class="keyword">Integer</span> month,
+         <span class="keyword">Integer</span> day)</samp></p>
+    
+       
+      </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    
+       
+       <dl class="dl detailList">
+        
+         <dt class="dt dlterm"><var class="keyword varname">year</var></dt>
+    
+         <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+        
+        
+         <dt class="dt dlterm"><var class="keyword varname">month</var></dt>
+    
+         <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+        
+        
+         <dt class="dt dlterm"><var class="keyword varname">day</var></dt>
+    
+         <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+        
+       </dl>
+    
+      </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    
+       
+       <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    
+       <p class="p">The returned date is in the GMT time zone.</p>
+    
+      </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+     </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_newInstance_4">
+    <a name="apex_System_Datetime_newInstance_4" data-id=""><!-- --></a>
+     <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">newInstance(year, month, day, hour,
+        minute, second)</span></span></h3>
+    
+     
+     
+     <div class="body refbody">
+    <div class="shortdesc">Constructs a Datetime from Integer representations of the specified year, month (1=Jan),
+      day, hour, minute, and second in the local time zone.</div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    
+       
+       <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> newInstance(<span class="keyword">Integer</span> year, <span class="keyword">Integer</span> month,
+         <span class="keyword">Integer</span> day, <span class="keyword">Integer</span> hour, <span class="keyword">Integer</span> minute, <span class="keyword">Integer</span> second)</samp></p>
+    
+       
+      </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    
+       
+       <dl class="dl detailList">
+        
+         <dt class="dt dlterm"><var class="keyword varname">year</var></dt>
+    
+         <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+        
+        
+         <dt class="dt dlterm"><var class="keyword varname">month</var></dt>
+    
+         <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+        
+        
+         <dt class="dt dlterm"><var class="keyword varname">day</var></dt>
+    
+         <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+        
+        
+         <dt class="dt dlterm"><var class="keyword varname">hour</var></dt>
+    
+         <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+        
+        
+         <dt class="dt dlterm"><var class="keyword varname">minute</var></dt>
+    
+         <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+        
+        
+         <dt class="dt dlterm"><var class="keyword varname">second</var></dt>
+    
+         <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+        
+       </dl>
+    
+      </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    
+       
+       <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    
+       <p class="p">The returned date is in the GMT time zone.</p>
+    
+      </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+     </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_newInstanceGmt">
+    <a name="apex_System_Datetime_newInstanceGmt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">newInstanceGmt(date, time)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Constructs a DateTime from the specified date and time
+    in the GMT time zone. </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> newInstanceGmt(<span class="keyword">Date</span> date, <span class="keyword">Time</span>
+              time)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">date</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_methods_system_date" title="Contains methods for the Date primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_methods_system_date">Date</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">time</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_time.htm#apex_methods_system_time" title="Contains methods for the Time primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_time.htm#apex_methods_system_time">Time</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_newInstanceGmt_2">
+    <a name="apex_System_Datetime_newInstanceGmt_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">newInstanceGmt(year, month, date)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Constructs a Datetime from Integer representations of the
+    specified year, month (1=Jan), and day at midnight in the GMT time
+    zone</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> newInstanceGmt(<span class="keyword">Integer</span>
+    year, <span class="keyword">Integer</span> month, <span class="keyword">Integer</span> date)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">year</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">month</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">date</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_newInstanceGmt_3">
+    <a name="apex_System_Datetime_newInstanceGmt_3" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">newInstanceGmt(year, month, date, hour, minute, second)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Constructs a Datetime from Integer representations of the
+    specified year, month (1=Jan), day, hour, minute, and second in the
+    GMT time zone</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> newInstanceGmt(<span class="keyword">Integer</span>
+    year, <span class="keyword">Integer</span> month, <span class="keyword">Integer</span> date, <span class="keyword">Integer</span> hour, <span class="keyword">Integer</span> minute, <span class="keyword">Integer</span>
+    second)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">year</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">month</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">date</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">hour</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">minute</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    
+    <dt class="dt dlterm"><var class="keyword varname">second</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_now">
+    <a name="apex_System_Datetime_now" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">now()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the current Datetime based on a GMT calendar. </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> now()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    <p class="p">The format of the returned datetime is: <samp class="codeph nolang">'MM/DD/YYYY HH:MM PERIOD'</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_parse">
+    <a name="apex_System_Datetime_parse" data-id=""><!-- --></a>
+        <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">parse(datetimeString)</span></span></h3>
+    
+        
+        
+        <div class="body refbody">
+    <div class="shortdesc">Constructs a Datetime from the given String in the local time zone and in the format
+            of the user locale. </div>
+    
+            <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    
+                
+                <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> parse(<span class="keyword">String</span>
+                        datetimeString)</samp></p>
+    
+                
+            </div>
+    
+            <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    
+                
+                <dl class="dl detailList">
+                    
+                        <dt class="dt dlterm"><var class="keyword varname">datetimeString</var></dt>
+    
+                        <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+                    
+                </dl>
+    
+            </div>
+    
+            <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    
+                
+                <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    
+                <p class="p">The returned date is in the GMT time zone.</p>
+    
+            </div>
+    
+            <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+                
+                <div class="p">This example uses <samp class="codeph apex_code">parse</samp> to create a Datetime
+                    from a date passed in as a string and that is formatted for the English (United
+                    States) locale. You may need to change the format of the date string if you have a
+                    different locale. <div class="box message info"><doc-content-callout><p> This sample is executed in an org where the “Enable ICU
+                        Locale Formats” crucial update is enabled. See <a class="xref" href="https://releasenotes.docs.salesforce.com/en-us/spring20/release-notes/rn_forcecom_globalization_enable_icu_cruc.htm" target="_blank" data-id="https://releasenotes.docs.salesforce.com/en-us/spring20/release-notes/rn_forcecom_globalization_enable_icu_cruc.htm">https://releasenotes.docs.salesforce.com/en-us/spring20/release-notes/rn_forcecom_globalization_enable_icu_cruc.htm</a>.</p></doc-content-callout></div>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_second">
+    <a name="apex_System_Datetime_second" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">second()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the second component of a Datetime in the local
+    time zone of the context user.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> second()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_secondGmt">
+    <a name="apex_System_Datetime_secondGmt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">secondGmt()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the second component of a Datetime in the GMT time
+    zone.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> secondGmt()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_time">
+    <a name="apex_System_Datetime_time" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">time()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the time component of a Datetime in the local time
+    zone of the context user.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Time</span> time()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_time.htm#apex_methods_system_time" title="Contains methods for the Time primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_time.htm#apex_methods_system_time">Time</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_timeGmt">
+    <a name="apex_System_Datetime_timeGmt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">timeGmt()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the time component of a Datetime in the GMT time
+    zone.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Time</span> timeGmt()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_time.htm#apex_methods_system_time" title="Contains methods for the Time primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_time.htm#apex_methods_system_time">Time</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_valueOf">
+    <a name="apex_System_Datetime_valueOf" data-id=""><!-- --></a>
+        <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">valueOf(dateTimeString)</span></span></h3>
+    
+        
+        
+        <div class="body refbody">
+    <div class="shortdesc">Returns a Datetime that contains the value of the specified string.</div>
+    
+            <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    
+                
+                <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> valueOf(<span class="keyword">String</span>
+                        dateTimeString)</samp></p>
+    
+                
+            </div>
+    
+            <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    
+                
+                <dl class="dl detailList">
+                    
+                        <dt class="dt dlterm"><var class="keyword varname">dateTimeString</var></dt>
+    
+                        <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+                    
+                </dl>
+    
+            </div>
+    
+            <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    
+                
+                <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    
+                <p class="p">The returned date is in the GMT time zone.</p>
+    
+            </div>
+    
+            <div class="section">
+    <h4 class="helpHead4">Usage</h4>
+    
+                
+                <p class="p">The specified string should use the standard date format “yyyy-MM-dd
+                    HH:mm:ss” in the local time zone.</p>
+    
+            </div>
+    
+            <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+                
+                <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_valueOf_2">
+    <a name="apex_System_Datetime_valueOf_2" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">valueOf(fieldValue)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Converts the specified object to a Datetime. Use this method to convert a history
+        tracking field value or an object that represents a Datetime value.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> valueOf(<span class="keyword">Object</span> fieldValue)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">fieldValue</var></dt>
+    
+    <dd class="dd">Type: Object</dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Usage</h4>
+    <p class="p">Use this method with the <samp class="codeph apex_code">OldValue</samp> or <samp class="codeph apex_code">NewValue</samp> fields of history sObjects,
+    such as <samp class="codeph apex_code">AccountHistory</samp>, when
+    the field is a Date/Time field.</p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_valueOfGmt">
+    <a name="apex_System_Datetime_valueOfGmt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">valueOfGmt(dateTimeString)</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns a Datetime that contains the value of the specified
+    String.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">Datetime</span> valueOfGmt(<span class="keyword">String</span>
+            dateTimeString)</samp></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    <dl class="dl detailList">
+    
+    <dt class="dt dlterm"><var class="keyword varname">dateTimeString</var></dt>
+    
+    <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+    
+    </dl>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="#apex_methods_system_datetime" title="Contains methods for the Datetime primitive data type.">Datetime</a></p>
+    </div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Usage</h4>
+    <p class="p">The specified string should use the
+    standard date format “yyyy-MM-dd HH:mm:ss” in the GMT
+    time zone.</p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_year">
+    <a name="apex_System_Datetime_year" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">year()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the year component of a Datetime in the local time
+    zone of the context user.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> year()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Datetime_yearGmt">
+    <a name="apex_System_Datetime_yearGmt" data-id=""><!-- --></a>
+    <h3 class="helpHead3"><span class="ph" id="topic-title"><a name="topic-title" data-id=""><!-- --></a><span class="titlecodeph">yearGmt()</span></span></h3>
+    
+    
+    
+    <div class="body refbody">
+    <div class="shortdesc">Returns the year component of a Datetime in the GMT time
+    zone.</div>
+    
+    <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph apex_code"><span class="keyword">public</span> <span class="keyword">Integer</span> yearGmt()</samp></p>
+    </div>
+    
+    
+    <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer" title="Contains methods for the Integer primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+    </div>
+    
+      <div class="section">
+    <h4 class="helpHead4">Example</h4>
+    
+       
+       <div class="codeSection apex_code" lwc:dom="manual"><dx-code-block></dx-code-block></div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+    </div>

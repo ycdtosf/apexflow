@@ -1,0 +1,1221 @@
+<div class="topic reference nested1" lang="en-us" id="apex_System_Date_methods">
+    <a name="apex_System_Date_methods" data-id>
+       <!-- -->
+    </a>
+    <h2 class="helpHead2">
+       <span class="ph" id="topic-title">
+          <a
+             name="topic-title" data-id>
+             <!-- -->
+          </a>
+          Date Methods
+       </span>
+    </h2>
+    <div class="body refbody">
+       <div class="section">
+          <p class="p">The following are methods for <samp
+             class="codeph apex_code"><span class="keyword">Date</span></samp>.</p>
+       </div>
+    </div>
+    <div id="sfdc:seealso" class="related-links">
+       <ul class="ullinks">
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_addDays"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_addDays">addDays(additionalDays)</a></strong><br>
+             Adds the specified number of additional days to a Date.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_addMonths"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_addMonths">addMonths(additionalMonths)</a></strong><br>
+             Adds the specified number of additional months to a Date
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_addYears"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_addYears">addYears(additionalYears)</a></strong><br>
+             Adds the specified number of additional years to a Date
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_day"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_day">day()</a></strong><br>
+             Returns the day-of-month component of a Date.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_dayOfYear"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_dayOfYear">dayOfYear()</a></strong><br>
+             Returns the day-of-year component of a Date.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_daysBetween"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_daysBetween">daysBetween(secondDate)</a></strong><br>
+             Returns the number of days between the Date that called the
+             method and the specified date.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_daysInMonth"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_daysInMonth">daysInMonth(year,
+             month)</a></strong><br>
+             Returns the number of days in the month for the specified <var
+                class="keyword varname">year</var> and <var
+                class="keyword varname">month</var> (1=Jan).
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_format"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_format">format()</a></strong><br>
+             Returns the Date as a string using the locale of the context
+             user
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_isLeapYear"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_isLeapYear">isLeapYear(year)</a></strong><br>
+             Returns <samp class="codeph apex_code"><span class="keyword">true</span></samp>
+             if the specified year is a leap year.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_isSameDay"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_isSameDay">isSameDay(dateToCompare)</a></strong><br>
+             Returns <samp class="codeph apex_code"><span class="keyword">true</span></samp>
+             if the Date that called the method is the same as the specified
+             date.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_month"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_month">month()</a></strong><br>
+             Returns the month component of a Date (1=Jan).
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_monthsBetween"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_monthsBetween">monthsBetween(secondDate)</a></strong><br>
+             Returns the number of months between the Date that called the
+             method and the specified date, ignoring the difference in days.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_newInstance"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_newInstance">newInstance(year,
+             month, day)</a></strong><br>
+             Constructs a Date from Integer representations of the <var
+                class="keyword varname">year</var>, <var
+                class="keyword varname">month</var> (1=Jan), and <var
+                class="keyword varname">day</var>.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_parse"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_parse">parse(stringDate)</a></strong><br>
+             Constructs a Date from a String. The format of the String
+             depends on the local date format.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_today"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_today">today()</a></strong><br>
+             Returns the current date in the current user's time zone.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_toStartOfMonth"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_toStartOfMonth">toStartOfMonth()</a></strong><br>
+             Returns the first of the month for the Date that called the
+             method.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_toStartOfWeek"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_toStartOfWeek">toStartOfWeek()</a></strong><br>
+             Returns the start of the week for the Date that called the
+             method, depending on the context user's locale.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_valueOf"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_valueOf">valueOf(stringDate)</a></strong><br>
+             Returns a Date that contains the value of the specified String.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_valueOf_2"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_valueOf_2">valueOf(fieldValue)</a></strong><br>
+             Converts the specified object to a <samp class="codeph ">Date</samp>.
+             Use this method to convert a history tracking field value or an
+             object that represents a <samp class="codeph ">Date</samp>
+             value.
+          </li>
+          <li class="link ulchildlink">
+             <strong><a
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_year"
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_date.htm#apex_System_Date_year">year()</a></strong><br>
+             Returns the year component of a Date
+          </li>
+       </ul>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_addDays">
+       <a name="apex_System_Date_addDays" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">addDays(additionalDays)</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Adds the specified number of additional days
+             to a Date.
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">Date</span>
+                addDays(<span class="keyword">Integer</span>
+                additionalDays)</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Parameters</h4>
+             <dl class="dl detailList">
+                <dt class="dt dlterm"><var class="keyword varname">additionalDays</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                   title="Contains methods for the Integer primitive data type."
+                   data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+                </dd>
+             </dl>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="#apex_methods_system_date"
+                title="Contains methods for the Date primitive data type.">Date</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_addMonths">
+       <a name="apex_System_Date_addMonths" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">addMonths(additionalMonths)</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Adds the specified number of additional
+             months to a Date
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">Date</span>
+                addMonths(<span class="keyword">Integer</span>
+                additionalMonths)</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Parameters</h4>
+             <dl class="dl detailList">
+                <dt class="dt dlterm"><var class="keyword varname">additionalMonths</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                   title="Contains methods for the Integer primitive data type."
+                   data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+                </dd>
+             </dl>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="#apex_methods_system_date"
+                title="Contains methods for the Date primitive data type.">Date</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_addYears">
+       <a name="apex_System_Date_addYears" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">addYears(additionalYears)</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Adds the specified number of additional years
+             to a Date
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">Date</span>
+                addYears(<span class="keyword">Integer</span>
+                additionalYears)</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Parameters</h4>
+             <dl class="dl detailList">
+                <dt class="dt dlterm"><var class="keyword varname">additionalYears</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                   title="Contains methods for the Integer primitive data type."
+                   data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+                </dd>
+             </dl>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="#apex_methods_system_date"
+                title="Contains methods for the Date primitive data type.">Date</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Date_day">
+       <a name="apex_System_Date_day" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">day()</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns the day-of-month component of a Date.</div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">Integer</span>
+                day()</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                title="Contains methods for the Integer primitive data type."
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_dayOfYear">
+       <a name="apex_System_Date_dayOfYear" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">dayOfYear()</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns the day-of-year component of a Date.</div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">Integer</span>
+                dayOfYear()</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                title="Contains methods for the Integer primitive data type."
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_daysBetween">
+       <a name="apex_System_Date_daysBetween" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">daysBetween(secondDate)</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns the number of days between the Date
+             that called
+             the method and the specified date.
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">Integer</span>
+                daysBetween(<span class="keyword">Date</span>
+                secondDate)</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Parameters</h4>
+             <dl class="dl detailList">
+                <dt class="dt dlterm"><var class="keyword varname">secondDate</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="#apex_methods_system_date"
+                   title="Contains methods for the Date primitive data type.">Date</a>
+                </dd>
+             </dl>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                title="Contains methods for the Integer primitive data type."
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Usage</h4>
+             <p class="p">If the Date that calls the method occurs after the
+                <var class="keyword varname">secondDate</var>, the return
+                value is negative.
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_daysInMonth">
+       <a name="apex_System_Date_daysInMonth" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">daysInMonth(year, month)</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns the number of days in the month for
+             the specified <var class="keyword varname">year</var> and <var
+                class="keyword varname">month</var> (1=Jan).
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">static</span>
+                <span class="keyword">Integer</span> daysInMonth(<span
+                   class="keyword">Integer</span> year,
+                <span class="keyword">Integer</span> month)</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Parameters</h4>
+             <dl class="dl detailList">
+                <dt class="dt dlterm"><var class="keyword varname">year</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                   title="Contains methods for the Integer primitive data type."
+                   data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+                </dd>
+                <dt class="dt dlterm"><var class="keyword varname">month</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                   title="Contains methods for the Integer primitive data type."
+                   data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+                </dd>
+             </dl>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                title="Contains methods for the Integer primitive data type."
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <p class="p">The following example finds the
+                number of days in the month of February in the year 1960.
+             </p>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_format">
+       <a name="apex_System_Date_format" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">format()</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns the Date as a string using the locale
+             of the context
+             user
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">String</span>
+                format()</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string"
+                title="Contains methods for the String primitive data type."
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_isLeapYear">
+       <a name="apex_System_Date_isLeapYear" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">isLeapYear(year)</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns <samp class="codeph apex_code"><span
+             class="keyword">true</span></samp> if
+             the specified year is a leap year.
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">static</span>
+                <span class="keyword">Boolean</span> isLeapYear(<span
+                   class="keyword">Integer</span> year)</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Parameters</h4>
+             <dl class="dl detailList">
+                <dt class="dt dlterm"><var class="keyword varname">year</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                   title="Contains methods for the Integer primitive data type."
+                   data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+                </dd>
+             </dl>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_boolean.htm#apex_methods_system_boolean"
+                title="Contains methods for the Boolean primitive data type."
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_boolean.htm#apex_methods_system_boolean">Boolean</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_isSameDay">
+       <a name="apex_System_Date_isSameDay" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">isSameDay(dateToCompare)</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns <samp class="codeph apex_code"><span
+             class="keyword">true</span></samp> if
+             the Date that called the method is the same as the specified
+             date.
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">Boolean</span>
+                isSameDay(<span class="keyword">Date</span>
+                dateToCompare)</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Parameters</h4>
+             <dl class="dl detailList">
+                <dt class="dt dlterm"><var class="keyword varname">dateToCompare</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="#apex_methods_system_date"
+                   title="Contains methods for the Date primitive data type.">Date</a>
+                </dd>
+             </dl>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_boolean.htm#apex_methods_system_boolean"
+                title="Contains methods for the Boolean primitive data type."
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_boolean.htm#apex_methods_system_boolean">Boolean</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_month">
+       <a name="apex_System_Date_month" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">month()</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns the month component of a Date
+             (1=Jan).
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">Integer</span>
+                month()</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                title="Contains methods for the Integer primitive data type."
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_monthsBetween">
+       <a name="apex_System_Date_monthsBetween" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">monthsBetween(secondDate)</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns the number of months between the Date
+             that called the method and the specified
+             date, ignoring the difference in days.
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">Integer</span>
+                monthsBetween(<span class="keyword">Date</span>
+                secondDate)</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Parameters</h4>
+             <dl class="dl detailList">
+                <dt class="dt dlterm"><var class="keyword varname">secondDate</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="#apex_methods_system_date"
+                   title="Contains methods for the Date primitive data type.">Date</a>
+                </dd>
+             </dl>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                title="Contains methods for the Integer primitive data type."
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_newInstance">
+       <a name="apex_System_Date_newInstance" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">newInstance(year, month,
+             day)</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Constructs a Date from Integer
+             representations of the <var class="keyword varname">year</var>,
+             <var class="keyword varname">month</var> (1=Jan), and <var
+                class="keyword varname">day</var>.
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">static</span>
+                <span class="keyword">Date</span> newInstance(<span
+                   class="keyword">Integer</span> year, <span
+                   class="keyword">Integer</span> month,
+                <span class="keyword">Integer</span> day)</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Parameters</h4>
+             <dl class="dl detailList">
+                <dt class="dt dlterm"><var class="keyword varname">year</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                   title="Contains methods for the Integer primitive data type."
+                   data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+                </dd>
+                <dt class="dt dlterm"><var class="keyword varname">month</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                   title="Contains methods for the Integer primitive data type."
+                   data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+                </dd>
+                <dt class="dt dlterm"><var class="keyword varname">day</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                   title="Contains methods for the Integer primitive data type."
+                   data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a>
+                </dd>
+             </dl>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="#apex_methods_system_date"
+                title="Contains methods for the Date primitive data type.">Date</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <p class="p">The following example creates the
+                date February 17th, 1960:
+             </p>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_parse">
+       <a name="apex_System_Date_parse" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">parse(stringDate)</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Constructs a Date from a String. The format
+             of the String
+             depends on the local date format.
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">static</span>
+                <span class="keyword">Date</span> parse(<span
+                   class="keyword">String</span> stringDate)</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Parameters</h4>
+             <dl class="dl detailList">
+                <dt class="dt dlterm"><var class="keyword varname">stringDate</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string"
+                   title="Contains methods for the String primitive data type."
+                   data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+                </dd>
+             </dl>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="#apex_methods_system_date"
+                title="Contains methods for the Date primitive data type.">Date</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <p class="p">The following example works in some
+                locales.
+             </p>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_today">
+       <a name="apex_System_Date_today" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">today()</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns the current date in the current user's
+             time zone.
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">static</span>
+                <span class="keyword">Date</span> today()</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="#apex_methods_system_date"
+                title="Contains methods for the Date primitive data type.">Date</a></p>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_toStartOfMonth">
+       <a name="apex_System_Date_toStartOfMonth" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">toStartOfMonth()</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns the first of the month for the Date
+             that called
+             the method.
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">Date</span>
+                toStartOfMonth()</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="#apex_methods_system_date"
+                title="Contains methods for the Date primitive data type.">Date</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_toStartOfWeek">
+       <a name="apex_System_Date_toStartOfWeek" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">toStartOfWeek()</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns the start of the week for the Date
+             that called
+             the method, depending on the context user's locale.
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">Date</span>
+                toStartOfWeek()</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="#apex_methods_system_date"
+                title="Contains methods for the Date primitive data type.">Date</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <p class="p">For example, the start of a week
+                is Sunday in the United States locale, and Monday in
+                European locales.
+                For example:
+             </p>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_valueOf">
+       <a name="apex_System_Date_valueOf" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">valueOf(stringDate)</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns a Date that contains the value of the
+             specified
+             String.
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">static</span>
+                <span class="keyword">Date</span> valueOf(<span
+                   class="keyword">String</span> stringDate)</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Parameters</h4>
+             <dl class="dl detailList">
+                <dt class="dt dlterm"><var class="keyword varname">stringDate</var></dt>
+                <dd class="dd">Type: <a class="xref"
+                   href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string"
+                   title="Contains methods for the String primitive data type."
+                   data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+                </dd>
+             </dl>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="#apex_methods_system_date"
+                title="Contains methods for the Date primitive data type.">Date</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Usage</h4>
+             <p class="p">The specified string should use the
+                standard date format “yyyy-MM-dd HH:mm:ss” in the local
+                time zone.
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us"
+       id="apex_System_Date_valueOf_2">
+       <a name="apex_System_Date_valueOf_2" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">valueOf(fieldValue)</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Converts the specified object to a <samp
+             class="codeph ">Date</samp>. Use this
+             method to convert a history tracking field value or an object
+             that represents a <samp class="codeph ">Date</samp> value.
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">static</span>
+                <span class="keyword">Date</span> valueOf(<span
+                   class="keyword">Object</span> fieldValue)</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Parameters</h4>
+             <dl class="dl detailList">
+                <dt class="dt dlterm"><var class="keyword varname">fieldValue</var></dt>
+                <dd class="dd">Type: Object</dd>
+             </dl>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="#apex_methods_system_date"
+                title="Contains methods for the Date primitive data type.">Date</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Usage</h4>
+             <p class="p">Use this method with the <samp
+                class="codeph apex_code">OldValue</samp> or <samp
+                class="codeph apex_code">NewValue</samp> fields of
+                history sObjects, such as <samp class="codeph apex_code">AccountHistory</samp>,
+                when the field is a Date field.
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <p class="p">This example converts history tracking fields to
+                <samp class="codeph apex_code"><span class="keyword">Date</span></samp>
+                values.
+             </p>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Versioned Behavior Changes</h4>
+             <div class="p">
+                <samp class="codeph ">Date.valueOf</samp> has been versioned
+                in these releases. 
+                <dl class="dl detailList">
+                   <dt class="dt dlterm">API version 33.0 or earlier</dt>
+                   <dd class="dd">If you call <samp class="codeph ">Date.valueOf</samp>
+                      with a <samp class="codeph ">Datetime</samp> object,
+                      the method returns a <samp class="codeph ">Date</samp>
+                      value that contains the hours, minutes, seconds, and
+                      milliseconds set.
+                   </dd>
+                   <dt class="dt dlterm">API version 34.0 to API version
+                      53.0
+                   </dt>
+                   <dd class="dd">If you call <samp class="codeph ">Date.valueOf</samp>
+                      with a <samp class="codeph ">Datetime</samp> object,
+                      the method converts <samp class="codeph ">Datetime</samp>
+                      to a valid <samp class="codeph ">Date</samp> without
+                      the time information, but the result depends on the
+                      manner in
+                      which the <samp class="codeph ">Datetime</samp>
+                      object was initialized. For
+                      example, if the <samp class="codeph ">Datetime</samp>
+                      object was initialized
+                      using <samp class="codeph ">Datetime.valueOf(stringDate)</samp>,
+                      the returned
+                      <samp class="codeph ">Date</samp> value contains
+                      time (hours) information. If
+                      the <samp class="codeph ">Datetime</samp> object is
+                      initialized using <samp class="codeph ">Datetime.newInstance(year,
+                      month, day, hour, minute,
+                      second)</samp> the returned <samp
+                         class="codeph ">Date</samp> value doesn’t
+                      contain time information.
+                   </dd>
+                   <dt class="dt dlterm">API version 54.0 and later</dt>
+                   <dd class="dd">If you call <samp class="codeph ">Date.valueOf</samp>
+                      with a <samp class="codeph ">Datetime</samp> object,
+                      the method converts the object to a
+                      valid <samp class="codeph ">Date</samp> without the
+                      time information.
+                   </dd>
+                </dl>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Date_year">
+       <a name="apex_System_Date_year" data-id>
+          <!-- -->
+       </a>
+       <h3 class="helpHead3">
+          <span class="ph" id="topic-title">
+             <a
+                name="topic-title" data-id>
+                <!-- -->
+             </a>
+             <span
+                class="titlecodeph">year()</span>
+          </span>
+       </h3>
+       <div class="body refbody">
+          <div class="shortdesc">Returns the year component of a Date</div>
+          <div class="section">
+             <h4 class="helpHead4">Signature</h4>
+             <p class="p"><samp class="codeph apex_code"><span
+                class="keyword">public</span> <span class="keyword">Integer</span>
+                year()</samp>
+             </p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Return Value</h4>
+             <p class="p">Type: <a class="xref"
+                href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer"
+                title="Contains methods for the Integer primitive data type."
+                data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_integer.htm#apex_methods_system_integer">Integer</a></p>
+          </div>
+          <div class="section">
+             <h4 class="helpHead4">Example</h4>
+             <div class="codeSection apex_code" lwc:dom="manual">
+                <dx-code-block></dx-code-block>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>

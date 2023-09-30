@@ -1,0 +1,45 @@
+<template>
+
+    <template lwc:if={namespaceData}>
+        <div>
+            <lightning-combobox name="namespaceName" label="Namespace" placeholder="Select a Namespace..." value={requestInput.namespaceName} onchange={handleNamespaceChange} options={namespaceOptions}></lightning-combobox>
+        </div>
+    </template>
+    
+    <template lwc:if={classData}>
+        <div>
+            <lightning-combobox name="className" label="Class" placeholder="Select a Class..." value={requestInput.className} onchange={handleClassChange} options={classOptions}></lightning-combobox>
+        </div>
+    </template>
+
+    <template lwc:if={methodData}>
+        
+        <div>
+            <lightning-combobox name="methodName" label="Method" placeholder="Select a Method..." value={requestInput.methodName} onchange={handleMethodChange} options={methodOptions}></lightning-combobox>
+        </div>
+
+        <template lwc:if={parametersData}>
+
+            <!--<div>{isStaticMethod}</div>-->
+
+            <template lwc:if={isStaticMethod}></template>
+            <template lwc:else>
+                <div>
+                    <lightning-input name="inputValue" label="Input Value" value={inputValue} onchange={handleInputValueChange}></lightning-input>
+                </div>
+            </template>
+
+            <template for:each={parametersData} for:item="p">
+                <c-apex-flow-cpe-parameter 
+                    key={p.name} 
+                    onparametervaluechanged={handleParameterValueChanged} 
+                    builder-context={builderContext} 
+                    parameter-data={p} 
+                    >
+                </c-apex-flow-cpe-parameter>
+            </template>
+        </template>
+
+    </template>
+
+</template>

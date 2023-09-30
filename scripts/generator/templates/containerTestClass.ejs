@@ -1,0 +1,10 @@
+@isTest
+public class MethodContainerTests {
+    @isTest public static void initTest() {
+		MethodContainer container = new MethodContainer();
+		container.init();
+	}
+    <%_ data.forEach(function(dataItem) { _%>
+    <%- include('./methodTestWrapper.ejs', { data : dataItem } ); %>
+    <%_ }); _%>
+}

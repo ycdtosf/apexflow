@@ -1,0 +1,202 @@
+<div class="topic reference nested1" lang="en-us" id="apex_System_Label_methods">
+    <a name="apex_System_Label_methods" data-id=""><!-- --></a>
+      <h2 class="helpHead2">Label Methods</h2>
+    
+      
+      <div class="body refbody">
+        <div class="section">
+    <p class="p">The following are methods for <samp class="codeph ">Label</samp>.</p>
+    </div>
+    
+        
+      </div>
+    
+    <div id="sfdc:seealso" class="related-links">
+    <ul class="ullinks">
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_class_System_Label.htm#apex_System_Label_get" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_class_System_Label.htm#apex_System_Label_get">get(namespace, label)</a></strong><br>
+    Retrieve a custom label for the specified namespace and a default language     setting.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_class_System_Label.htm#unique_1069222866" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_class_System_Label.htm#unique_1069222866">get(namespace, label, language)</a></strong><br>
+    Retrieve a custom label for the specified namespace and language.</li>
+    <li class="link ulchildlink">
+    <strong><a href="/docs/atlas.en-us.apexref.meta/apexref/apex_class_System_Label.htm#apex_System_Label_translationExists" data-id="docs/atlas.en-us.apexref.meta/apexref/apex_class_System_Label.htm#apex_System_Label_translationExists">translationExists(namespace, label, language)</a></strong><br>
+    Check if translation exists for a label and language in a namespace.</li>
+    </ul>
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Label_get">
+    <a name="apex_System_Label_get" data-id=""><!-- --></a>
+      <h3 class="helpHead3"><span class="titlecodeph">get(namespace, label)</span></h3>
+    
+      
+      
+      <div class="body refbody">
+    <div class="shortdesc">Retrieve a custom label for the specified namespace and a default language
+        setting.</div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph ">public static String get(String namespace, String label)</samp></p>
+    </div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    
+          
+          <dl class="dl detailList">
+            
+              <dt class="dt dlterm"><var class="keyword varname">namespace</var></dt>
+    
+              <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+              <dd class="dd">If the namespace name is null, it defaults to the package namespace. If the namespace
+                name is an empty string, it implies the org namespace.</dd>
+    
+            
+            
+              <dt class="dt dlterm"><var class="keyword varname">label</var></dt>
+    
+              <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+              <dd class="dd">The label name cannot be null or an empty string.</dd>
+    
+            
+          </dl>
+    
+        </div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a></p>
+    </div>
+    
+      </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="unique_1069222866">
+    <a name="unique_1069222866" data-id=""><!-- --></a>
+      <h3 class="helpHead3"><span class="titlecodeph">get(namespace, label, language)</span></h3>
+    
+      
+      
+      <div class="body refbody">
+    <div class="shortdesc">Retrieve a custom label for the specified namespace and language.</div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph ">public static String get(String namespace, String label, String
+              language)</samp></p>
+    </div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    
+          
+          <dl class="dl detailList">
+            
+              <dt class="dt dlterm"><var class="keyword varname">namespace</var></dt>
+    
+              <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+              <dd class="dd">If the namespace name is null, it defaults to the package namespace. If the namespace
+                name is an empty string,  it implies the org namespace.</dd>
+    
+            
+            
+              <dt class="dt dlterm"><var class="keyword varname">label</var></dt>
+    
+              <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+              <dd class="dd">The label name cannot be null or an empty string.</dd>
+    
+            
+            
+              <dt class="dt dlterm"><var class="keyword varname">language</var></dt>
+    
+              <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+              <dd class="dd">This parameter must be a valid language ISO code. See the Platform-Only Languages
+                section in <a class="xref" href="https://help.salesforce.com/s/articleView?id=sf.faq_getstart_what_languages_does.htm&amp;language=en_US" target="_blank" title="HTML (New Window)" data-id="https://help.salesforce.com/s/articleView?id=sf.faq_getstart_what_languages_does.htm&amp;language=en_US">Supported Languages</a> in
+                Salesforce Help.</dd>
+    
+            
+          </dl>
+    
+        </div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a></p>
+    </div>
+    
+      </div>
+    
+    </div>
+    <div class="topic reference nested2" lang="en-us" id="apex_System_Label_translationExists">
+    <a name="apex_System_Label_translationExists" data-id=""><!-- --></a>
+      <h3 class="helpHead3"><span class="titlecodeph">translationExists(namespace, label, language)</span></h3>
+    
+      
+      
+      <div class="body refbody">
+    <div class="shortdesc">Check if translation exists for a label and language in a namespace.</div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Signature</h4>
+    <p class="p"><samp class="codeph ">public static Boolean translationExists(string namespace, string label,
+              string language)</samp></p>
+    </div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Parameters</h4>
+    
+          
+          <dl class="dl detailList">
+            
+              <dt class="dt dlterm"><var class="keyword varname">namespace</var></dt>
+    
+              <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+              <dd class="dd">If the namespace name is null, it defaults to the package namespace. If the namespace
+                name is an empty string, it implies the org namespace.</dd>
+    
+            
+            
+              <dt class="dt dlterm"><var class="keyword varname">label</var></dt>
+    
+              <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+              <dd class="dd">The label name cannot be null or an empty string.</dd>
+    
+            
+            
+              <dt class="dt dlterm"><var class="keyword varname">language</var></dt>
+    
+              <dd class="dd">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string" title="Contains methods for the String primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_string.htm#apex_methods_system_string">String</a>
+    </dd>
+    
+              <dd class="dd">This parameter must be a valid language ISO code. See the Platform-Only Languages
+                section in <a class="xref" href="https://help.salesforce.com/s/articleView?id=sf.faq_getstart_what_languages_does.htm&amp;language=en_US" target="_blank" title="HTML (New Window)" data-id="https://help.salesforce.com/s/articleView?id=sf.faq_getstart_what_languages_does.htm&amp;language=en_US">Supported Languages</a> in
+                Salesforce Help.</dd>
+    
+            
+          </dl>
+    
+        </div>
+    
+        <div class="section">
+    <h4 class="helpHead4">Return Value</h4>
+    <p class="p">Type: <a class="xref" href="/docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_boolean.htm#apex_methods_system_boolean" title="Contains methods for the Boolean primitive data type." data-id="docs/atlas.en-us.apexref.meta/apexref/apex_methods_system_boolean.htm#apex_methods_system_boolean">Boolean</a></p>
+    </div>
+    
+      </div>
+    
+    </div>
+    </div>

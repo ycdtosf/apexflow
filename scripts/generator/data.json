@@ -1,0 +1,471 @@
+[
+    {
+        "parameters": [
+            {
+                "label": "additionalDays",
+                "dataType": "Integer"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "addDays",
+        "inputType": "Date",
+        "isStatic": false,
+        "outputType": "Date",
+        "description": "Adds the specified number of additional days to a Date. "
+    },
+    {
+        "parameters": [
+            {
+                "label": "additionalMonths",
+                "dataType": "Integer"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "addMonths",
+        "inputType": "Date",
+        "isStatic": false,
+        "outputType": "Date",
+        "description": "Adds the specified number of additional months to a Date "
+    },
+    {
+        "parameters": [
+            {
+                "label": "additionalYears",
+                "dataType": "Integer"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "addYears",
+        "inputType": "Date",
+        "isStatic": false,
+        "outputType": "Date",
+        "description": "Adds the specified number of additional years to a Date "
+    },
+    {
+        "parameters": [],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "day",
+        "inputType": "Date",
+        "isStatic": false,
+        "outputType": "Integer",
+        "description": "Returns the day-of-month component of a Date."
+    },
+    {
+        "parameters": [],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "dayOfYear",
+        "inputType": "Date",
+        "isStatic": false,
+        "outputType": "Integer",
+        "description": "Returns the day-of-year component of a Date."
+    },
+    {
+        "parameters": [
+            {
+                "label": "secondDate",
+                "dataType": "Date"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "daysBetween",
+        "inputType": "Date",
+        "isStatic": false,
+        "outputType": "Integer",
+        "description": "Returns the number of days between the Date that called the method and the specified date. "
+    },
+    {
+        "parameters": [
+            {
+                "label": "year",
+                "dataType": "Integer"
+            },
+            {
+                "label": "month",
+                "dataType": "Integer"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "daysInMonth",
+        "inputType": "Date",
+        "isStatic": true,
+        "outputType": "Integer",
+        "description": "Returns the number of days in the month for the specified "
+    },
+    {
+        "parameters": [],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "format",
+        "inputType": "Date",
+        "isStatic": false,
+        "outputType": "String",
+        "description": "Returns the Date as a string using the locale of the context user "
+    },
+    {
+        "parameters": [
+            {
+                "label": "year",
+                "dataType": "Integer"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "isLeapYear",
+        "inputType": "Date",
+        "isStatic": true,
+        "outputType": "Boolean",
+        "description": "Returns "
+    },
+    {
+        "parameters": [
+            {
+                "label": "dateToCompare",
+                "dataType": "Date"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "isSameDay",
+        "inputType": "Date",
+        "isStatic": false,
+        "outputType": "Boolean",
+        "description": "Returns "
+    },
+    {
+        "parameters": [],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "month",
+        "inputType": "Date",
+        "isStatic": false,
+        "outputType": "Integer",
+        "description": "Returns the month component of a Date (1=Jan). "
+    },
+    {
+        "parameters": [
+            {
+                "label": "secondDate",
+                "dataType": "Date"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "monthsBetween",
+        "inputType": "Date",
+        "isStatic": false,
+        "outputType": "Integer",
+        "description": "Returns the number of months between the Date that called the method and the specified date, ignoring the difference in days. "
+    },
+    {
+        "parameters": [
+            {
+                "label": "year",
+                "dataType": "Integer"
+            },
+            {
+                "label": "month",
+                "dataType": "Integer"
+            },
+            {
+                "label": "day",
+                "dataType": "Integer"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "newInstance",
+        "inputType": "Date",
+        "isStatic": true,
+        "outputType": "Date",
+        "description": "Constructs a Date from Integer representations of the "
+    },
+    {
+        "parameters": [
+            {
+                "label": "stringDate",
+                "dataType": "String"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "parse",
+        "inputType": "Date",
+        "isStatic": true,
+        "outputType": "Date",
+        "description": "Constructs a Date from a String. The format of the String depends on the local date format. "
+    },
+    {
+        "parameters": [],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "today",
+        "inputType": "Date",
+        "isStatic": true,
+        "outputType": "Date",
+        "description": "Returns the current date in the current user's time zone. "
+    },
+    {
+        "parameters": [],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "toStartOfMonth",
+        "inputType": "Date",
+        "isStatic": false,
+        "outputType": "Date",
+        "description": "Returns the first of the month for the Date that called the method. "
+    },
+    {
+        "parameters": [],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "toStartOfWeek",
+        "inputType": "Date",
+        "isStatic": false,
+        "outputType": "Date",
+        "description": "Returns the start of the week for the Date that called the method, depending on the context user's locale. "
+    },
+    {
+        "parameters": [
+            {
+                "label": "stringDate",
+                "dataType": "String"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "valueOf",
+        "inputType": "Date",
+        "isStatic": true,
+        "outputType": "Date",
+        "description": "Returns a Date that contains the value of the specified String. "
+    },
+    {
+        "parameters": [
+            {
+                "label": "fieldValue",
+                "dataType": "Object"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "valueOf",
+        "inputType": "Date",
+        "isStatic": true,
+        "outputType": "Date",
+        "description": "Converts the specified object to a "
+    },
+    {
+        "parameters": [],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "year",
+        "inputType": "Date",
+        "isStatic": false,
+        "outputType": "Integer",
+        "description": "Returns the year component of a Date"
+    },
+    {
+        "parameters": [
+            {
+                "label": "stringDate",
+                "dataType": "String"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "parse",
+        "inputType": "Date",
+        "outputType": "Date",
+        "description": "Constructs a Date from a String. The format of the String depends on the local date format. "
+    },
+    {
+        "parameters": [],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "today",
+        "inputType": "Date",
+        "outputType": "Date",
+        "description": "Returns the current date in the current user's time zone. "
+    },
+    {
+        "parameters": [],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "toStartOfMonth",
+        "inputType": "Date",
+        "outputType": "Date",
+        "description": "Returns the first of the month for the Date that called the method. "
+    },
+    {
+        "parameters": [],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "toStartOfWeek",
+        "inputType": "Date",
+        "outputType": "Date",
+        "description": "Returns the start of the week for the Date that called the method, depending on the context user's locale. "
+    },
+    {
+        "parameters": [
+            {
+                "label": "stringDate",
+                "dataType": "String"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "valueOf",
+        "inputType": "Date",
+        "outputType": "Date",
+        "description": "Returns a Date that contains the value of the specified String. "
+    },
+    {
+        "parameters": [
+            {
+                "label": "fieldValue",
+                "dataType": "Object"
+            }
+        ],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "valueOf",
+        "inputType": "Date",
+        "outputType": "Date",
+        "description": "Converts the specified object to a . Use this method to convert a history tracking field value or an object that represents a value. "
+    },
+    {
+        "parameters": [],
+        "namespaceName": "System",
+        "className": "Date",
+        "methodName": "year",
+        "inputType": "Date",
+        "outputType": "Integer",
+        "description": "Returns the year component of a Date"
+    },
+    {
+        "namespaceName" : "System",
+        "className" : "String",
+        "methodName" : "capitalize",
+        "isStatic" : false,
+        "inputType" : "String",
+        "outputType" : "String",
+        "description" : "Capitalizes the first letter of a String provided.",
+        "parameters" : []
+    },
+    {
+        "namespaceName" : "System",
+        "className" : "String",
+        "methodName" : "contains",
+        "isStatic" : false,
+        "inputType" : "String",
+        "outputType" : "Boolean",
+        "description" : "Returns true or false if the Substring provided exists in the input value.",
+        "parameters" : [
+            { "label" : "Substring", "dataType" : "String", "description" : "The substring to look for in the input value." }
+        ]
+    },
+    {
+        "namespaceName" : "System",
+        "className" : "String",
+        "methodName" : "containsAny",
+        "isStatic" : false,
+        "inputType" : "String",
+        "outputType" : "Boolean",
+        "description" : "Returns true if the current String contains any of the characters in the specified String; otherwise, returns false.",
+        "parameters" : [
+            { "label" : "Character String", "dataType" : "String", "description" : "The string of characters to find in the inpurt value" }
+        ]
+    },
+    {
+        "namespaceName" : "System",
+        "className" : "String",
+        "methodName" : "containsIgnoreCase",
+        "isStatic" : false,
+        "inputType" : "String",
+        "outputType" : "Boolean",
+        "description" : "Returns true or false if the Substring provided exists in the input value, regardless of case.",
+        "parameters" : [
+            { "label" : "Substring", "dataType" : "String", "description" : "The case-insensitive substring to look for in the input value." }
+        ]
+    },
+    {
+        "namespaceName" : "System",
+        "className" : "String",
+        "methodName" : "containsNone",
+        "isStatic" : false,
+        "inputType" : "String",
+        "outputType" : "Boolean",
+        "description" : "Returns true if the current String doesnt contain any of the characters in the specified String; otherwise, returns false. Basically, it's the opposite of String.contains.",
+        "parameters" : [
+            { "label" : "Substring", "dataType" : "String", "description" : "The substring to look for in the input value." }
+        ]
+    },
+    {
+        "namespaceName" : "System",
+        "className" : "String",
+        "methodName" : "containsOnly",
+        "isStatic" : false,
+        "inputType" : "String",
+        "outputType" : "Boolean",
+        "description" : "Returns true if the current String contains characters only from the specified sequence of characters and not any other characters; otherwise, returns false.",
+        "parameters" : [
+            { "label" : "Character String", "dataType" : "String", "description" : "The substring to look for in the input value." }
+        ]
+    },
+    {
+        "namespaceName" : "System",
+        "className" : "String",
+        "methodName" : "containsWhitespace",
+        "isStatic" : false,
+        "inputType" : "String",
+        "outputType" : "Boolean",
+        "description" : "Returns true if the current String contains any white space characters; otherwise, returns false.",
+        "parameters" : []
+    },
+    {
+        "namespaceName" : "System",
+        "className" : "String",
+        "methodName" : "join",
+        "prefix" : "x",
+        "isStatic" : true,
+        "inputType" : "Object[]",
+        "outputType" : "String",
+        "description" : "Returns true if the current String contains any white space characters; otherwise, returns false.",
+        "parameters" : [
+            { "label" : "Items", "dataType" : "Object[]", "description" : "List of items to join." },
+            { "label" : "Separator", "dataType" : "String", "description" : "Separator between joined items." }
+        ]
+    },
+    {
+        "namespaceName" : "System",
+        "className" : "String",
+        "methodName" : "replace",
+        "isStatic" : false,
+        "inputType" : "String",
+        "outputType" : "String",
+        "description" : "Returns a String where the Target is matched in the Input Value and is replaced with Replacement.",
+        "parameters" : [
+            { "label" : "Target", "dataType" : "String", "description" : "The substring to look for in the input value." },
+            { "label" : "Replacement", "dataType" : "String", "description" : "The replacement value if Target is found in the input value." }
+        ]
+    },
+    {
+        "namespaceName" : "System",
+        "className" : "String",
+        "methodName" : "split",
+        "isStatic" : false,
+        "inputType" : "String",
+        "outputType" : "String[]",
+        "description" : "Returns a String[] that contains each substring of the Input Value that is terminated by either the regular expression regExp or the end of the Input Value.",
+        "parameters" : [
+            { "label" : "Separator", "dataType" : "String", "description" : "The String / Regex to split the Input Value with" }
+        ]
+    }
+]

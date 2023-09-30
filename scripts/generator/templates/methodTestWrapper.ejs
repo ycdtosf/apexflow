@@ -1,0 +1,12 @@
+@isTest public static void <%= data.namespaceName %><%= data.className %><%= data.prefix %><%= data.capitalizedMethodName %>Test() {
+        MethodContainer.<%= data.namespaceName %><%= data.className %><%= data.prefix %><%= data.capitalizedMethodName %> m = new MethodContainer.<%= data.namespaceName %><%= data.className %><%= data.prefix %><%= data.capitalizedMethodName %>();
+        m.register();
+    <%_ if (data.isStatic == false) { _%>
+        m.inputValue.<%= data.lowercaseInputDataType %>Value = <%- include('./testDataValues.ejs', { data : { dataType : data.inputType } } ); %>;
+    <%_ } _%>
+    <%_ data.parameters.forEach(function(param) { _%>
+        m.getParameter('<%= param.label %>').value.<%= param.lowercaseDataType %>Value = <%- include('./testDataValues.ejs', { data : { dataType : param.dataType } } ); %>;
+    <%_ }); _%>
+        m.execute();
+        <%= data.outputType %> output = (<%= data.outputType %>)m.outputValue.<%= data.lowercaseOutputDataType %>Value;
+    }   

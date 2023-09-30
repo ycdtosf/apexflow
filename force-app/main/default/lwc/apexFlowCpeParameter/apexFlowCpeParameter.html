@@ -1,0 +1,22 @@
+<template>
+    <div><label class="slds-form-element__label"><b>{parameterData.name}</b></label></div>
+    <div><label class="slds-form-element__label"><i>{parameterData.description}</i></label></div>
+    <div class="slds-clearfix">
+        <div class="slds-float_right">
+            <lightning-button-menu alternative-text="Show menu">
+                <template for:each={bindOptions} for:item="o">
+                    <lightning-menu-item key={o.value} value={o.value} label={o.label}></lightning-menu-item>
+                </template>
+            </lightning-button-menu>
+            <!--<lightning-button-icon-stateful variant="border-filled" icon-name="utility:merge_field" selected={isBind} onclick={handleToggle} alternative-text="Toggle Variables"></lightning-button-icon-stateful>-->
+        </div>
+        <div style="margin-right: 40px;">
+            <template lwc:if={isCollection}>
+                <lightning-combobox variant="label-hidden" name="bindOptions" label="Bind Options" placeholder="Select a Collection Variable..." value={parameterData.value} onchange={handleParameterValueChange} options={bindOptions}></lightning-combobox>
+            </template>
+            <template lwc:else>
+                <lightning-input variant="label-hidden" name={parameterData.name} label={parameterData.name} value={parameterData.value} onchange={handleParameterValueChange}></lightning-input>
+            </template>
+        </div>
+    </div>
+</template>
